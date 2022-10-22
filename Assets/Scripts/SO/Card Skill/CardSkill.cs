@@ -13,8 +13,18 @@ public class CardSkill : ScriptableObject
         Min,
         Odd,
         Even,
-        Pair,
-        Countdown
+        //Pair,
+        //Countdown
+    }
+
+    public enum ModifierType
+    {
+        Normal,
+        Exact,
+        Add,
+        Subtract,
+        Multiply,
+        Divide,
     }
 
     public string title = "";
@@ -24,6 +34,9 @@ public class CardSkill : ScriptableObject
 
     public RequirementType requirementType = RequirementType.Normal;
     public int requirementValue = 0; // ignored if Normal, Odd, Even, Pair
+
+    public ModifierType modifierType = ModifierType.Normal;
+    public int modifierValue = 0;
 
     public bool TestDice(int diceValue)
     {
@@ -39,16 +52,21 @@ public class CardSkill : ScriptableObject
         }
     }
 
-    public void DoActionWithTest(int diceValue, CharacterStatus attacker, CharacterStatus defender)
+    public bool DoActionWithTest(int diceValue, CharacterStatus attacker, CharacterStatus defender)
     {
         if (TestDice(diceValue))
         {
             DoAction(diceValue, attacker, defender);
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
-    public void DoAction(int diceValue, CharacterStatus attacker, CharacterStatus defender)
+    public virtual void DoAction(int diceValue, CharacterStatus attacker, CharacterStatus defender)
     {
-        defender.currentHP.Value -= diceValue;
+        defender.DoDamaged(diceValue);
     }
 }

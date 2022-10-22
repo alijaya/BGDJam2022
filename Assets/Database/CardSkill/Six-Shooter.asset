@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a99ca80ccc2d422c90cff0895fee797, type: 3}
-  m_Name: Tea Time
+  m_Script: {fileID: 11500000, guid: d058a308171f845c78f23178542213f5, type: 3}
+  m_Name: Six-Shooter
   m_EditorClassIdentifier: 
-  title: Tea Time
-  description: Restore N HP to self
+  title: Six-Shooter
+  description: Deal 8 damage to enemy
   repeatable: 0
-  requirementType: 2
-  requirementValue: 3
-  modifierType: 0
-  modifierValue: 0
+  requirementType: 1
+  requirementValue: 6
+  modifierType: 1
+  modifierValue: 8

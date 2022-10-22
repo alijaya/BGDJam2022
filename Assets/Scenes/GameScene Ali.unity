@@ -371,7 +371,7 @@ PrefabInstance:
     - target: {fileID: 4755364178938128717, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: cardSkill
       value: 
-      objectReference: {fileID: 11400000, guid: 9b0b56aaa23674559af08b02e5f243a9, type: 2}
+      objectReference: {fileID: 11400000, guid: 2da0bd969f11544d58c27189f27044cb, type: 2}
     - target: {fileID: 8529649988977335711, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: m_Name
       value: Skill 3
@@ -582,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 4755364178938128717, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: cardSkill
       value: 
-      objectReference: {fileID: 11400000, guid: b29f0affcbf4a43daab42c9370f3d84c, type: 2}
+      objectReference: {fileID: 11400000, guid: 7b5a2c8c2e22a4c84a0f6762ceaac6ad, type: 2}
     - target: {fileID: 8529649988977335711, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: m_Name
       value: Skill 1
@@ -1173,6 +1173,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1246,6 +1247,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babea7f429a1049c0bd0eaa83ac4fb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &525762132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1504,7 @@ PrefabInstance:
     - target: {fileID: 4755364178938128717, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: cardSkill
       value: 
-      objectReference: {fileID: 11400000, guid: 4e76ca00b662546e6b6e8c4bde320a98, type: 2}
+      objectReference: {fileID: 11400000, guid: 673e0fc9c41564e0f96c61dfcf4f0039, type: 2}
     - target: {fileID: 8529649988977335711, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: m_Name
       value: Skill 2

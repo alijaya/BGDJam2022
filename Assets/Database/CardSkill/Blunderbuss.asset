@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bccdecb18c0c4974b4c98c1f836e6ad, type: 3}
-  m_Name: Bash
+  m_Script: {fileID: 11500000, guid: d058a308171f845c78f23178542213f5, type: 3}
+  m_Name: Blunderbuss
   m_EditorClassIdentifier: 
-  title: Bash
-  description: Pukulin sesuai jumlah dadu uwu
+  title: Blunderbuss
+  description: Deal 2 x N damage to enemy
+  repeatable: 0
+  requirementType: 2
+  requirementValue: 4
+  modifierType: 4
+  modifierValue: 2

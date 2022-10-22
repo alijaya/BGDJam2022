@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bccdecb18c0c4974b4c98c1f836e6ad, type: 3}
-  m_Name: Roundhouse Kick
+  m_Script: {fileID: 11500000, guid: d058a308171f845c78f23178542213f5, type: 3}
+  m_Name: Cane
   m_EditorClassIdentifier: 
-  title: Roundhouse Kick
-  description: Nendang sambil muter
+  title: Cane
+  description: Deal N damage to enemy
+  repeatable: 0
+  requirementType: 0
+  requirementValue: 0
+  modifierType: 0
+  modifierValue: 0

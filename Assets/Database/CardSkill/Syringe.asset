@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a99ca80ccc2d422c90cff0895fee797, type: 3}
-  m_Name: Tea Time
+  m_Name: Syringe
   m_EditorClassIdentifier: 
-  title: Tea Time
-  description: Restore N HP to self
+  title: Syringe
+  description: Restore 10 HP to self. 1 use per battle
   repeatable: 0
-  requirementType: 2
-  requirementValue: 3
-  modifierType: 0
-  modifierValue: 0
+  requirementType: 1
+  requirementValue: 6
+  modifierType: 1
+  modifierValue: 10
