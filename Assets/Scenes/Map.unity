@@ -242,7 +242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000637215083291612, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_text
-      value: Mer
+      value: Bos
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Pivot.x
@@ -310,11 +310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 624
+      value: 619
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 301
+      value: 313
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -823,10 +823,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -934,7 +934,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000637215083291612, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_text
-      value: Bos
+      value: Mer
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Pivot.x
@@ -1002,11 +1002,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 382
+      value: 442
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1513,15 +1513,15 @@ MonoBehaviour:
   - {x: -213, y: 180}
   - {x: 211, y: 274}
   - {x: 211, y: 274}
-  - {x: 624, y: 301}
+  - {x: 619, y: 313}
   - {x: -63.99994, y: -43}
   - {x: 211, y: 274}
   - {x: -63.99994, y: -43}
-  - {x: 382, y: -5}
+  - {x: 442, y: -24}
   - {x: 211, y: 274}
-  - {x: 624, y: 301}
-  - {x: 382, y: -5}
-  - {x: 624, y: 301}
+  - {x: 619, y: 313}
+  - {x: 442, y: -24}
+  - {x: 619, y: 313}
   - {x: -163, y: -332}
   - {x: -63.99994, y: -43}
   - {x: -163, y: -332}
@@ -1529,15 +1529,15 @@ MonoBehaviour:
   - {x: -63.99994, y: -43}
   - {x: 211, y: 274}
   - {x: -63.99994, y: -43}
-  - {x: 382, y: -5}
+  - {x: 442, y: -24}
   - {x: 211, y: 274}
-  - {x: 624, y: 301}
-  - {x: 382, y: -5}
-  - {x: 624, y: 301}
+  - {x: 619, y: 313}
+  - {x: 442, y: -24}
+  - {x: 619, y: 313}
   - {x: 198, y: -264}
-  - {x: 382, y: -5}
-  - {x: 382, y: -5}
-  - {x: 624, y: 301}
+  - {x: 442, y: -24}
+  - {x: 442, y: -24}
+  - {x: 619, y: 313}
   lineThickness: 10
   relativeSize: 0
   lineList: 1
