@@ -7,14 +7,12 @@ using TMPro;
 public class SlotMB : MonoBehaviour, IDropHandler
 {
     private SkillMB skill;
-    private CardSkill cardSkill;
 
     public TextMeshProUGUI text;
 
     void Awake()
     {
         skill = GetComponentInParent<SkillMB>();
-        cardSkill = skill.cardSkill;
     }
 
     void Start()
@@ -24,6 +22,7 @@ public class SlotMB : MonoBehaviour, IDropHandler
 
     public void UpdateDisplay()
     {
+        var cardSkill = skill.cardSkill;
         switch (cardSkill.requirementType)
         {
             case CardSkill.RequirementType.Normal: text.text = ""; break;
@@ -41,15 +40,12 @@ public class SlotMB : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag != null)
         {
 
-            GameObject die = eventData.pointerDrag;
-            var roll = die.GetComponent<DiceController>().dieValue;
+            var dice = eventData.pointerDrag.GetComponent<DiceController>();
 
-            var playerStatus = GlobalRef.instance.playerStatus;
-            var enemyStatus = GlobalRef.instance.enemyStatus;
-
-            if (cardSkill.DoActionWithTest(roll, playerStatus, enemyStatus))
+            if (skill.TryActivate(dice))
             {
-                Debug.Log("Attack!");
+                // Ini supaya OnEndDragnya ga kepanggil
+                eventData.pointerDrag = null;
             }
         }
     }

@@ -7,35 +7,66 @@ public class DiceController : MonoBehaviour
 {
     private RectTransform rt;
     public Sprite[] dice;
-    public int dieValue;
+    public int diceValue;
+
+    private CanvasGroup canvasGroup;
     private Vector2 initPosition;
+    private bool visible = true;
 
     private void Awake() {
         rt = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
         initPosition = rt.anchoredPosition;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        RollDie();
+        RollDice();
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RollDice()
     {
-        
+        visible = true;
+        diceValue = Random.Range(1, 7);
+
+        ResetPosition();
+        UpdateDisplay();
     }
 
-    public void RollDie() {
-        int roll = Random.Range(1, 7);
-        Debug.Log(roll);
-        gameObject.GetComponent<Image>().sprite = dice[roll-1];
-        dieValue = roll;
+    public void ResetPosition()
+    {
+        rt.anchoredPosition = initPosition;
+    }
 
-        // rt.transform.position = initPosition;
-        gameObject.GetComponent<DiceController>().enabled = true;
-        gameObject.GetComponent<Image>().enabled = true;
+    public void UpdateDisplay()
+    {
+        gameObject.GetComponent<Image>().sprite = dice[diceValue - 1];
+
+        if (visible)
+        {
+            canvasGroup.alpha = 1;
+            canvasGroup.interactable = true;
+            canvasGroup.blocksRaycasts = true;
+        }
+        else
+        {
+            canvasGroup.alpha = 0;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+        }
+    }
+
+    public void Hide()
+    {
+        visible = false;
+        UpdateDisplay();
+    }
+
+    public void Show()
+    {
+        visible = true;
+        UpdateDisplay();
     }
 }

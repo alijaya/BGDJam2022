@@ -37,7 +37,6 @@ public class HealthBar : MonoBehaviour
     {
         text.text = currentHealth.Value + " / " + maxHealth.Value;
         var percentage = (float)currentHealth.Value / maxHealth.Value;
-        Debug.Log(percentage);
         fillBar.anchorMax = new Vector2(percentage, fillBar.anchorMax.y);
         fillBar.anchorMin = new Vector2(percentage - 1, fillBar.anchorMin.y);
     }

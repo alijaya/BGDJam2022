@@ -17,7 +17,7 @@ public class Slot : MonoBehaviour, IDropHandler {
         if (eventData.pointerDrag != null) {
 
             GameObject die = eventData.pointerDrag;
-            int roll = die.GetComponent<DiceController>().dieValue;
+            int roll = die.GetComponent<DiceController>().diceValue;
             gameObject.GetComponent<Image>().sprite = dice[roll-1];
 
             Color temp = gameObject.GetComponent<Image>().color;
