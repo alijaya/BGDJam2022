@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityAtoms.BaseAtoms;
 
-[RequireComponent(typeof(TextMeshProUGUI))]
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
