@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.unity-atoms.unity-atoms-base-atoms": "4.4.5",
+    "com.unity-atoms.unity-atoms-core": "4.4.5",
     "com.unity.collab-proxy": "1.17.2",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.ide.rider": "3.0.15",
@@ -9,6 +11,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
+    "com.unity.uiextensions": "2.2.7",
     "com.unity.visualscripting": "1.7.8",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
@@ -40,9 +43,7 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity-atoms.unity-atoms-core": "4.4.5",
-    "com.unity-atoms.unity-atoms-base-atoms": "4.4.5"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {
@@ -52,6 +53,13 @@
         "com.openupm",
         "com.unity-atoms.unity-atoms-base-atoms",
         "com.unity-atoms.unity-atoms-core"
+      ]
+    },
+    {
+      "name": "npmjs",
+      "url": "https://registry.npmjs.org/",
+      "scopes": [
+        "com.unity.uiextensions"
       ]
     }
   ]
