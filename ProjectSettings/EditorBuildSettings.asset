@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameScene Ali.unity
+    guid: 6afff278741d1421ca9f255a0669bfcc
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ea4448b858f0a444ab23ba8cffdd309d
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: de952917d5b894d2cb75e0996fc79afd
   m_configObjects: {}
