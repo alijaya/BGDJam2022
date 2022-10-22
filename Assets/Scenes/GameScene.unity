@@ -198,6 +198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510638199}
     m_Modifications:
+    - target: {fileID: 1803550404907071268, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cada9b09b01d79e449a37e328284cc04, type: 3}
     - target: {fileID: 3466163869442263059, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_Name
       value: Die 3
@@ -248,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_LocalRotation.w
@@ -286,6 +290,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7951278741294857559, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 510638198}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
 --- !u!224 &247147098 stripped
@@ -366,7 +374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -730,8 +738,8 @@ Canvas:
   m_GameObject: {fileID: 510638195}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1378,6 +1386,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510638199}
     m_Modifications:
+    - target: {fileID: 1803550404907071268, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 39f85c792d39bc146a20884e74da2b33, type: 3}
     - target: {fileID: 3466163869442263059, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_Name
       value: Die 2
@@ -1428,7 +1440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1466,6 +1478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7951278741294857559, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 510638198}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
 --- !u!224 &959440050 stripped
@@ -1530,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1568,6 +1584,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7951278741294857559, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 510638198}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
 --- !u!224 &988230528 stripped
@@ -1993,8 +2013,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554862277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.082645416, y: 0.13180968, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.029, y: -0.0075, z: 0}
+  m_LocalScale: {x: 0.9223619, y: 0.76466995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2144,17 +2164,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1602767299585981512, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_text
-      value: 'Very strange magic.
+      value: 'Fair magic.
 
         N+2 dmg'
       objectReference: {fileID: 0}
     - target: {fileID: 1602767299585981512, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_fontSize
-      value: 16.3
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1602767299585981512, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_fontSizeBase
-      value: 16.3
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1602767299585981512, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_enableAutoSizing
@@ -2222,7 +2242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2333,7 +2353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_LocalRotation.w
