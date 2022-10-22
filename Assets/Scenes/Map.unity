@@ -310,11 +310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 473
+      value: 624
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 278
+      value: 301
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1377,11 +1377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 183
+      value: 211
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 311
+      value: 274
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1511,33 +1511,33 @@ MonoBehaviour:
   - {x: -607, y: -39}
   - {x: -63.99994, y: -43}
   - {x: -213, y: 180}
-  - {x: 183, y: 311}
-  - {x: 183, y: 311}
-  - {x: 473, y: 278}
+  - {x: 211, y: 274}
+  - {x: 211, y: 274}
+  - {x: 624, y: 301}
   - {x: -63.99994, y: -43}
-  - {x: 183, y: 311}
+  - {x: 211, y: 274}
   - {x: -63.99994, y: -43}
   - {x: 382, y: -5}
-  - {x: 183, y: 311}
-  - {x: 473, y: 278}
+  - {x: 211, y: 274}
+  - {x: 624, y: 301}
   - {x: 382, y: -5}
-  - {x: 473, y: 278}
+  - {x: 624, y: 301}
   - {x: -163, y: -332}
   - {x: -63.99994, y: -43}
   - {x: -163, y: -332}
   - {x: 198, y: -264}
   - {x: -63.99994, y: -43}
-  - {x: 183, y: 311}
+  - {x: 211, y: 274}
   - {x: -63.99994, y: -43}
   - {x: 382, y: -5}
-  - {x: 183, y: 311}
-  - {x: 473, y: 278}
+  - {x: 211, y: 274}
+  - {x: 624, y: 301}
   - {x: 382, y: -5}
-  - {x: 473, y: 278}
+  - {x: 624, y: 301}
   - {x: 198, y: -264}
   - {x: 382, y: -5}
   - {x: 382, y: -5}
-  - {x: 473, y: 278}
+  - {x: 624, y: 301}
   lineThickness: 10
   relativeSize: 0
   lineList: 1
