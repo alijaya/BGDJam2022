@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Die 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3466163869442263059, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -358,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -253.22
+      value: -253.21997
       objectReference: {fileID: 0}
     - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1863,7 +1867,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dice: []
+  slots: []
   die: {fileID: 0}
+  slot: {fileID: 0}
 --- !u!224 &1097055216 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}

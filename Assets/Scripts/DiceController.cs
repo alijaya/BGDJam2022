@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class DiceController : MonoBehaviour
 {
-    RectTransform rt;
+    private RectTransform rt;
     public Sprite[] dice;
-    [SerializeField] public int dieValue;
+    public int dieValue;
+    private Vector2 initPosition;
+
+    private void Awake() {
+        rt = GetComponent<RectTransform>();
+        initPosition = rt.anchoredPosition;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +29,13 @@ public class DiceController : MonoBehaviour
     }
 
     public void RollDie() {
-        int roll = Random.Range(1, 6);
+        int roll = Random.Range(1, 7);
         Debug.Log(roll);
         gameObject.GetComponent<Image>().sprite = dice[roll-1];
         dieValue = roll;
+
+        // rt.transform.position = initPosition;
+        gameObject.GetComponent<DiceController>().enabled = true;
+        gameObject.GetComponent<Image>().enabled = true;
     }
 }

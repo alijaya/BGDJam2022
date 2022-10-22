@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class EndTurn : MonoBehaviour
 {
-    public GameObject[] dice;
-    public GameObject die;
+    public GameObject[] dice, slots;
+    public GameObject die, slot;
 
     public void RerollDie()
     {
         dice = GameObject.FindGameObjectsWithTag("Dice");
         foreach (GameObject die in dice) {
             die.GetComponent<DiceController>().RollDie();
+        }
+
+        slots = GameObject.FindGameObjectsWithTag("Slot");
+        foreach (GameObject slot in slots) {
+            slot.GetComponent<Slot>().Reset();
         }
     }
 }
