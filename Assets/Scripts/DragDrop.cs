@@ -20,7 +20,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData) {
         Debug.Log("OnBeginDrag");
-        canvasGroup.alpha = 1.6f;
+        canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
     }
 

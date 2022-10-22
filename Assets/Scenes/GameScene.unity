@@ -352,6 +352,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Strange magic. Nx2 dmg
       objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -253.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4948872956822668252, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_text
       value: Odd
@@ -456,13 +468,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skill 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8529649988977335711, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_Name
+      value: Skill 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590793542279938916, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590793542279938916, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590793542279938916, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
---- !u!224 &370362665 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
-  m_PrefabInstance: {fileID: 370362664}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &375859957
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,9 +832,9 @@ RectTransform:
   - {fileID: 736581370}
   - {fileID: 386775292}
   - {fileID: 1015137844}
-  - {fileID: 2123466804}
-  - {fileID: 370362665}
-  - {fileID: 1855231725}
+  - {fileID: 1146963809}
+  - {fileID: 1008500342}
+  - {fileID: 1097055216}
   - {fileID: 988230528}
   - {fileID: 959440050}
   - {fileID: 247147098}
@@ -1687,6 +1710,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3606908260883363029, guid: 8cc5679e94b104f4190c8edae5839988, type: 3}
   m_PrefabInstance: {fileID: 988230527}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1008500342 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+  m_PrefabInstance: {fileID: 1855231724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1015137843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,6 +1864,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dice: []
   die: {fileID: 0}
+--- !u!224 &1097055216 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+  m_PrefabInstance: {fileID: 4948872955218081909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1146963809 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+  m_PrefabInstance: {fileID: 370362664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1237330358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2337,18 @@ PrefabInstance:
       propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -14.219971
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4948872956822668252, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_text
       value: Even
@@ -2403,18 +2453,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skill 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8529649988977335711, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_Name
+      value: Skill 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
---- !u!224 &1855231725 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
-  m_PrefabInstance: {fileID: 1855231724}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2123466804 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4948872957140021313, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
-  m_PrefabInstance: {fileID: 4948872955218081909}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4948872955218081909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2425,6 +2469,18 @@ PrefabInstance:
     - target: {fileID: 1602767299585981512, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_text
       value: Slash the enemy. N dmg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 230.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493476583625005191, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4948872957140021312, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_Enabled
@@ -2517,6 +2573,10 @@ PrefabInstance:
     - target: {fileID: 4948872957140021318, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
       propertyPath: m_Name
       value: Skill 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529649988977335711, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
+      propertyPath: m_Name
+      value: Skill 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048485abd955ab94ca8f9a067be359b1, type: 3}
