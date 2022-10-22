@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: Player HP
   _id: 
-  _value: 12
+  _value: 15
   _changed: {fileID: 0}
   _changedWithHistory: {fileID: 0}
-  _triggerChangedOnOnEnable: 1
+  _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 12
+  _oldValue: 14
   _initialValue: 12
-  _preChangeTransformers: []
+  _preChangeTransformers:
+  - {fileID: 11400000, guid: 90b95b13caa6a4b5abcb1ddd7be19452, type: 2}
