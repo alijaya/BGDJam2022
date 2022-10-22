@@ -1619,11 +1619,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -125
+      value: -151
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 273.32
+      value: 296
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1753,14 +1753,14 @@ MonoBehaviour:
   - {x: -710, y: -52}
   - {x: -307, y: -14}
   - {x: -524, y: 210}
-  - {x: -125, y: 273.32}
-  - {x: -125, y: 273.32}
+  - {x: -151, y: 296}
+  - {x: -151, y: 296}
   - {x: 290.99994, y: 273.32}
   - {x: -307, y: -14}
-  - {x: -125, y: 273.32}
+  - {x: -151, y: 296}
   - {x: -307, y: -14}
   - {x: 291, y: -64}
-  - {x: -125, y: 273.32}
+  - {x: -151, y: 296}
   - {x: 290.99994, y: 273.32}
   - {x: 291, y: -64}
   - {x: 290.99994, y: 273.32}
@@ -1769,10 +1769,10 @@ MonoBehaviour:
   - {x: -417, y: -313}
   - {x: -52, y: -218}
   - {x: -307, y: -14}
-  - {x: -125, y: 273.32}
+  - {x: -151, y: 296}
   - {x: -307, y: -14}
   - {x: 291, y: -64}
-  - {x: -125, y: 273.32}
+  - {x: -151, y: 296}
   - {x: 290.99994, y: 273.32}
   - {x: 291, y: -64}
   - {x: 290.99994, y: 273.32}
