@@ -69,5 +69,5 @@ MonoBehaviour:
     sceneAsset: {fileID: 102900000, guid: 332411a5896f39c48adfde7970085260, type: 3}
     sceneAssetGuidHex: 332411a5896f39c48adfde7970085260
   sceneLoot:
-    sceneAsset: {fileID: 0}
-    sceneAssetGuidHex: 00000000000000000000000000000000
+    sceneAsset: {fileID: 102900000, guid: 04a0e78b236f7413c8f97f953ce3deba, type: 3}
+    sceneAssetGuidHex: 04a0e78b236f7413c8f97f953ce3deba

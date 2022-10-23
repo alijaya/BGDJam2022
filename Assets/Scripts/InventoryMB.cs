@@ -30,10 +30,22 @@ public class InventoryMB : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag != null)
         {
 
-            var skillToBuy = eventData.pointerDrag.GetComponent<SkillMB>();
+            var skillToGet = eventData.pointerDrag.GetComponent<SkillMB>();
+            var shopItem = eventData.pointerDrag.GetComponent<ShopItemMB>();
+            var lootItem = eventData.pointerDrag.GetComponent<LootItemMB>();
 
-            if (TryBuy(skillToBuy))
+            if (shopItem) // untuk ngecek ini barang jualan atau loot, not elegant solution tho ==a
             {
+                if (TryBuy(skillToGet))
+                {
+                    // Ini supaya OnEndDragnya ga kepanggil
+                    eventData.pointerDrag = null;
+                }
+            }
+            if (lootItem)
+            {
+                GetSkill(skillToGet);
+
                 // Ini supaya OnEndDragnya ga kepanggil
                 eventData.pointerDrag = null;
             }
@@ -46,9 +58,7 @@ public class InventoryMB : MonoBehaviour, IDropHandler
         if (playerMoney.Value >= skillToBuy.cardSkill.price)
         {
             playerMoney.Value -= skillToBuy.cardSkill.price;
-            skillToBuy.Hide();
-            GlobalRef.instance.playerSkills[inventoryIndex] = skillToBuy.cardSkill;
-            UpdateDisplay();
+            GetSkill(skillToBuy);
 
             return true;
         }
@@ -56,5 +66,12 @@ public class InventoryMB : MonoBehaviour, IDropHandler
         {
             return false;
         }
+    }
+
+    public void GetSkill(SkillMB skillToGet)
+    {
+        skillToGet.Hide();
+        GlobalRef.instance.playerSkills[inventoryIndex] = skillToGet.cardSkill;
+        UpdateDisplay();
     }
 }

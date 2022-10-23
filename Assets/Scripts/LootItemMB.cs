@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using TMPro;
 
-public class ShopItemMB : MonoBehaviour
+public class LootItemMB : MonoBehaviour
 {
     private SkillMB skill;
     public CardSkill cardSkill;
