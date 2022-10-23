@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ShopManager : MonoBehaviour
 {
-    [SerializeField] private string scene = "Map";
-
     public List<InventoryMB> skills;
     public List<ShopItemMB> shopItems;
     public List<CardPriceMB> cardPrices;
@@ -21,8 +19,7 @@ public class ShopManager : MonoBehaviour
             skill.UpdateDisplay();
         }
 
-        var items = new List<CardSkill>(GlobalRef.instance.shopItems);
-        items.Shuffle();
+        var items = GlobalRef.instance.currentMapShop;
         for (var i = 0; i < shopItems.Count; i++)
         {
             var shop = shopItems[i];
@@ -35,27 +32,8 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    // public void RandomizeShop()
-    // {
-    //     Debug.Log("test");
-
-    //     for (var i = 0; i < skills.Count; i++)
-    //     {
-    //         var skill = skills[i];
-    //         skill.cardSkill = GlobalRef.instance.playerSkills[i];
-    //         skill.UpdateDisplay();
-    //     }
-
-    //     for (var i = 0; i < 3; i++)
-    //     {
-    //         var shopItems = skills[i];
-    //         skill.cardSkill = GlobalRef.instance.playerSkills[i];
-    //         skill.UpdateDisplay();
-    //     }
-    // }
-
     public void LeaveShop()
     {
-        SceneManager.LoadScene(scene);
+        GlobalRef.instance.GoToMap();
     }
 }

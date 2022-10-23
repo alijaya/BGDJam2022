@@ -28,7 +28,13 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
-        StartRandom();
+        StartWithMapEncounter();
+    }
+
+    public void StartWithMapEncounter()
+    {
+        enemy = GlobalRef.instance.currentMapEncounter;
+        StartBattle();
     }
 
     public void StartRandom()
