@@ -10,4 +10,5 @@ public class GlobalRef : GlobalSO<GlobalRef>
     public CharacterStatus enemyStatus;
     public IntReference playerMoney;
     public CardSkillValueList playerSkills;
+    public EnemyValueList enemies;
 }

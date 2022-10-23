@@ -4,15 +4,19 @@ using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using System;
 using UnityAtoms;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
+    public Enemy enemy;
+
     public GameObject goInteractive;
     public GameObject goWinningScreen;
     public GameObject goLosingScreen;
 
     public List<DiceController> dices;
     public List<SkillMB> skills;
+    public Image enemyImage;
 
     public BoolReference isPlaying;
     public BoolReference isPlayerTurn;
@@ -24,7 +28,25 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
+        StartRandom();
+    }
+
+    public void StartRandom()
+    {
+        SelectRandomEnemy();
         StartBattle();
+    }
+
+    public void StartBattleFullHP()
+    {
+        GlobalRef.instance.playerStatus.FullHP();
+        StartBattle();
+    }
+
+    public void StartRandomFullHP()
+    {
+        GlobalRef.instance.playerStatus.FullHP();
+        StartRandom();
     }
 
     public void OnEnable()
@@ -51,8 +73,7 @@ public class BattleManager : MonoBehaviour
 
     private void OnEnemyDeath()
     {
-        // TODO: random for now, but need to replace it with enemy loot
-        lootValue.Value = UnityEngine.Random.Range(3, 7);
+        lootValue.Value = enemy.lootValue;
         isWinning.Value = true;
         isPlaying.Value = false;
 
@@ -61,8 +82,25 @@ public class BattleManager : MonoBehaviour
         goLosingScreen.SetActive(false);
     }
 
+    public void SelectRandomEnemy()
+    {
+        var enemies = GlobalRef.instance.enemies;
+        enemy = enemies[UnityEngine.Random.Range(0, enemies.Count)];
+    }
+
+    public void PrepareEnemy()
+    {
+        var enemyStatus = GlobalRef.instance.enemyStatus;
+        enemyStatus.title.Value = enemy.title;
+        enemyStatus.maxHP.Value = enemy.maxHP;
+        enemyStatus.FullHP();
+        enemyImage.sprite = enemy.sprite;
+        enemyImage.SetNativeSize();
+    }
+
     public void StartBattle()
     {
+        PrepareEnemy();
         isPlaying.Value = true;
 
         goInteractive.SetActive(true);
@@ -94,8 +132,8 @@ public class BattleManager : MonoBehaviour
     public void EnemyTurn()
     {
         // enemy logic here
-        // for now just do random 1 - 6 damage
-        var damage = UnityEngine.Random.Range(1, 7);
+        // for now just do random min - max damage
+        var damage = UnityEngine.Random.Range(enemy.minDamage, enemy.maxDamage + 1);
         GlobalRef.instance.playerStatus.DoDamaged(damage);
 
         ChangeTurn();

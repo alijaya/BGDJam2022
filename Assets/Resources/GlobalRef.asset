@@ -21,3 +21,4 @@ MonoBehaviour:
     _variable: {fileID: 11400000, guid: f567b471ea3ac4acea63b347e1516987, type: 2}
     _variableInstancer: {fileID: 0}
   playerSkills: {fileID: 11400000, guid: ef6ec2ac95a5c41f699d53f68891ff55, type: 2}
+  enemies: {fileID: 11400000, guid: 1d2d64c8b1c094471bd33e5ba2dece5a, type: 2}

@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ae3bd8c445b4301aebe06ae9ebcabb, type: 3}
   m_Name: Enemy Status
   m_EditorClassIdentifier: 
+  title:
+    _usage: 2
+    _value: 
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 8f109bd7e5cc748e2bca06ada9835ee5, type: 2}
+    _variableInstancer: {fileID: 0}
   currentHP:
     _usage: 2
     _value: 0

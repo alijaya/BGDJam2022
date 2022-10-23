@@ -6,10 +6,15 @@ using UnityAtoms.BaseAtoms;
 [CreateAssetMenu]
 public class CharacterStatus : ScriptableObject
 {
+    public StringReference title;
     public IntReference currentHP;
     public IntReference maxHP;
-    public IntReference playerMoney;
     public VoidBaseEventReference deathEvent;
+
+    public void FullHP()
+    {
+        currentHP.Value = maxHP.Value;
+    }
 
     public void DoDamaged(int damage)
     {
@@ -23,15 +28,5 @@ public class CharacterStatus : ScriptableObject
     public void DoHealed(int damage)
     {
         currentHP.Value += damage;
-    }
-
-    public void DoDecMoney(int money)
-    {
-        playerMoney.Value -= money;
-    }
-
-    public void DoIncMoney(int money)
-    {
-        playerMoney.Value += money;
     }
 }
