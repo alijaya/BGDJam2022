@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7627dd782474644a40f5beda2969ec, type: 3}
-  m_Name: Ronda
+  m_Script: {fileID: 11500000, guid: d058a308171f845c78f23178542213f5, type: 3}
+  m_Name: Derringer
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: fa9aedde5b3333b458c75012da19d3cf, type: 3}
-  title: Ronda
-  maxHP: 12
-  lootValue: 3
-  minDamage: 1
-  maxDamage: 4
+  title: Derringer
+  description: Deal N + 2 damage to enemy
+  price: 5
+  requirementType: 0
+  requirementValue: 0
+  modifierType: 2
+  modifierValue: 2
+  repeatType: 0
+  repeatValue: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Syringe
   description: Restore 10 HP to self. 1 use per battle
-  price: 5
+  price: 6
   requirementType: 1
   requirementValue: 6
   modifierType: 1

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e7627dd782474644a40f5beda2969ec, type: 3}
-  m_Name: Mr. Mafia
+  m_Name: Constable
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 7bf4d398130b47e45ac698e19df0ac5f, type: 3}
-  title: Mr. Mafia
-  maxHP: 30
+  sprite: {fileID: 21300000, guid: fa9aedde5b3333b458c75012da19d3cf, type: 3}
+  title: Constable
+  maxHP: 15
   lootValue: 5
   minDamage: 3
-  maxDamage: 7
+  maxDamage: 4

@@ -9,15 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d058a308171f845c78f23178542213f5, type: 3}
-  m_Name: Blunderbuss
+  m_Script: {fileID: 11500000, guid: 1e7627dd782474644a40f5beda2969ec, type: 3}
+  m_Name: Local Thug
   m_EditorClassIdentifier: 
-  title: Blunderbuss
-  description: Deal 2 x N damage to enemy
-  price: 6
-  requirementType: 2
-  requirementValue: 4
-  modifierType: 4
-  modifierValue: 2
-  repeatType: 0
-  repeatValue: 1
+  sprite: {fileID: 21300000, guid: 7bf4d398130b47e45ac698e19df0ac5f, type: 3}
+  title: Local Thug
+  maxHP: 30
+  lootValue: 8
+  minDamage: 1
+  maxDamage: 6

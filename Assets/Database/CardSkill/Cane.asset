@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Cane
   description: Deal N damage to enemy
-  price: 4
+  price: 3
   requirementType: 0
   requirementValue: 0
   modifierType: 0
   modifierValue: 0
-  repeatable: 0
+  repeatType: 0
+  repeatValue: 1
