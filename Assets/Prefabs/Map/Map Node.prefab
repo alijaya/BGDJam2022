@@ -135,6 +135,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: a4a1b0efee3ee485cb4d939986160b3b, type: 2}
+        m_TargetAssemblyTypeName: GlobalRef, Assembly-CSharp
+        m_MethodName: PlaySFXClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7137982835816564764
 MonoBehaviour:
   m_ObjectHideFlags: 0

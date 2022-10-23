@@ -37,6 +37,7 @@ public class SlotMB : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        GlobalRef.instance.PlaySFXClick();
         if (eventData.pointerDrag != null)
         {
 

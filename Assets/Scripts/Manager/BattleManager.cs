@@ -163,6 +163,7 @@ public class BattleManager : MonoBehaviour
 
     public void RerollDice()
     {
+        GlobalRef.instance.PlaySFXDice();
         foreach (var dice in dices)
         {
             dice.RollDice();

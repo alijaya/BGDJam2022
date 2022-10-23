@@ -22,6 +22,7 @@ public class ShopLootUpgradeMB : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        GlobalRef.instance.PlaySFXClick();
         if (isFree)
         {
             upgradeMB.upgrade.DoUpgrade();
