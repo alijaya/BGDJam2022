@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 6201565c4b8384af7aae86c716535aee, type: 3}
   title: Jack
-  maxHP: 10
+  maxHP: 12
   lootValue: 8
-  minDamage: 10
-  maxDamage: 15
+  minDamage: 4
+  maxDamage: 10

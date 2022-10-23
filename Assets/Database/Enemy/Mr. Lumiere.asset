@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: dd0297434c0419d4e9bc6ec65a62c0ff, type: 3}
   title: Mr. Lumiere
-  maxHP: 100
-  lootValue: 100
+  maxHP: 40
+  lootValue: 50
   minDamage: 5
-  maxDamage: 15
+  maxDamage: 10

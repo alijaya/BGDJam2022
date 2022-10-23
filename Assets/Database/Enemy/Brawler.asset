@@ -15,6 +15,6 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 28b2e7af8e1904bebb3532bbd4e35d8a, type: 3}
   title: Brawler
   maxHP: 20
-  lootValue: 6
-  minDamage: 4
+  lootValue: 7
+  minDamage: 2
   maxDamage: 7

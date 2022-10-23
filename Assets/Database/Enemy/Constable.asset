@@ -15,6 +15,6 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: fa9aedde5b3333b458c75012da19d3cf, type: 3}
   title: Constable
   maxHP: 15
-  lootValue: 5
-  minDamage: 3
-  maxDamage: 4
+  lootValue: 4
+  minDamage: 1
+  maxDamage: 6
