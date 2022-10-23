@@ -2652,7 +2652,7 @@ PrefabInstance:
     - target: {fileID: 1000637215358808290, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 50ba1d2bd4007584789e8b1fdc5f3b0d, type: 3}
+      objectReference: {fileID: 21300000, guid: 960630a5e475d0c4caf4ebedeede4c0b, type: 3}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2743,15 +2743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nodeType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
-      propertyPath: possibleHealMax
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
-      propertyPath: possibleHealMin
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -2768,7 +2760,7 @@ PrefabInstance:
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: possibleEncounterEnemies
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &1358845378 stripped
@@ -4281,6 +4273,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1050549294}
     m_Modifications:
+    - target: {fileID: 1000637215358808290, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 50ba1d2bd4007584789e8b1fdc5f3b0d, type: 3}
     - target: {fileID: 1000637215358808300, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4370,6 +4366,18 @@ PrefabInstance:
       value: Node E1
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleHealMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleHealMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4384,7 +4392,7 @@ PrefabInstance:
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: possibleEncounterEnemies
       value: 
-      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &2136269625 stripped

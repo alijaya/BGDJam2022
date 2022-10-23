@@ -18,18 +18,12 @@ MonoBehaviour:
   Added: {fileID: 0}
   Removed: {fileID: 0}
   list:
-  - type: 0
+  - type: 1
     upgrade: {fileID: 0}
-    skill: {fileID: 0}
+    skill: {fileID: 11400000, guid: 2da0bd969f11544d58c27189f27044cb, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 840d487d4cac4480d9f0dba0ff9bfca1, type: 2}
   - type: 0
     upgrade: {fileID: 11400000, guid: 4652028c5103e3b429f2ebbef1de7852, type: 2}
     skill: {fileID: 0}
-  - type: 0
-    upgrade: {fileID: 11400000, guid: 8547ed3007d4f6245acbdbea493b4331, type: 2}
-    skill: {fileID: 0}
-  - type: 0
-    upgrade: {fileID: 0}
-    skill: {fileID: 0}
-  - type: 1
-    upgrade: {fileID: 0}
-    skill: {fileID: 11400000, guid: 3cb3f078e27324ea3b5ac91c45ddcc43, type: 2}

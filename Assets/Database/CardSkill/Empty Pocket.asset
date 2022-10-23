@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Empty Pocket
   description: Do Nothing
   price: 0
-  requirementType: 0
+  requirementType: 2
   requirementValue: 0
   modifierType: 1
   modifierValue: 0
