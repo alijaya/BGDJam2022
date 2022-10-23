@@ -12,6 +12,7 @@ public class ShopManager : MonoBehaviour
 
     public void Start()
     {
+        GlobalRef.instance.PlayDefaultBGM();
         // RandomizeShop();
 
         for (var i = 0; i < skills.Count; i++)

@@ -31,6 +31,11 @@ public class GlobalRef : GlobalSO<GlobalRef>
     public SceneReference sceneLoot;
     public SceneReference sceneEnding;
 
+    public FloatReference bgmVolume;
+    public FloatReference sfxVolume;
+    public AudioClip defaultBgm;
+    public AudioClip battleBgm;
+
     public void GoToMainMenu()
     {
         SceneManager.LoadScene(sceneMainMenu.Name);
@@ -63,5 +68,15 @@ public class GlobalRef : GlobalSO<GlobalRef>
         playerMoney.Value = playerInitMoney;
         playerSkills.List = new List<CardSkill>(playerInitSkills.List);
         mapPaths.Clear();
+    }
+
+    public void PlayDefaultBGM()
+    {
+        AudioManager.Instance.PlayBGM(defaultBgm);
+    }
+
+    public void PlayBattleBGM()
+    {
+        AudioManager.Instance.PlayBGM(battleBgm);
     }
 }

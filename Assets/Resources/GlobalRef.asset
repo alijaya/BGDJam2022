@@ -58,7 +58,6 @@ MonoBehaviour:
     _variableInstancer: {fileID: 0}
   playerInitSkills: {fileID: 11400000, guid: 09e351188343f49dbb0a1054a0435b81, type: 2}
   enemies: {fileID: 11400000, guid: 1d2d64c8b1c094471bd33e5ba2dece5a, type: 2}
-  shopItems: {fileID: 11400000, guid: 1475ba2122155014899eb8242a48ed29, type: 2}
   sceneMainMenu:
     sceneAsset: {fileID: 102900000, guid: ea4448b858f0a444ab23ba8cffdd309d, type: 3}
     sceneAssetGuidHex: ea4448b858f0a444ab23ba8cffdd309d
@@ -77,3 +76,17 @@ MonoBehaviour:
   sceneEnding:
     sceneAsset: {fileID: 102900000, guid: b1a8bc6636a244056a4fd4442413215b, type: 3}
     sceneAssetGuidHex: b1a8bc6636a244056a4fd4442413215b
+  bgmVolume:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 803a7c8cbcde4479ab41ca3106dab69f, type: 2}
+    _variableInstancer: {fileID: 0}
+  sfxVolume:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: f3fca39f232b3470fa1efe0c74742ec8, type: 2}
+    _variableInstancer: {fileID: 0}
+  defaultBgm: {fileID: 8300000, guid: 0f9ae6e17a7cf405db238908f210bbec, type: 3}
+  battleBgm: {fileID: 8300000, guid: 8a377e2dfa5e84bd7b57088e532740d8, type: 3}

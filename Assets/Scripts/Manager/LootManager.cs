@@ -11,6 +11,8 @@ public class LootManager : MonoBehaviour
 
     public void Start()
     {
+        GlobalRef.instance.PlayDefaultBGM();
+
         for (var i = 0; i < skills.Count; i++)
         {
             var skill = skills[i];

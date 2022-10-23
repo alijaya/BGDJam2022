@@ -28,6 +28,7 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
+        GlobalRef.instance.PlayBattleBGM();
         StartWithMapEncounter();
     }
 

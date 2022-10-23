@@ -21,6 +21,7 @@ public class MapManager : MonoBehaviour
 
     private void Start()
     {
+        GlobalRef.instance.PlayDefaultBGM();
         UpdateDisplay();
     }
 
