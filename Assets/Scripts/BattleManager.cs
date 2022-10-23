@@ -73,6 +73,8 @@ public class BattleManager : MonoBehaviour
         {
             var skill = skills[i];
             skill.cardSkill = GlobalRef.instance.playerSkills[i];
+            skill.ResetUsageInBattle();
+            skill.ResetUsageInTurn();
             skill.UpdateDisplay();
         }
         SetTurn(true);
@@ -124,7 +126,8 @@ public class BattleManager : MonoBehaviour
     {
         foreach (var skill in skills)
         {
-            skill.Show();
+            skill.ResetUsageInTurn();
+            skill.ShowHideByUsable();
         }
     }
 }

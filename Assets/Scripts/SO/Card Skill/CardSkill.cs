@@ -27,6 +27,14 @@ public class CardSkill : ScriptableObject
         Divide,
     }
 
+    public enum RepeatType
+    {
+        Normal, // Turn 1
+        Repeatable,
+        TurnCount,
+        BattleCount,
+    }
+
     public string title = "";
     public string description = "";
     public int price = 0;
@@ -37,7 +45,20 @@ public class CardSkill : ScriptableObject
     public ModifierType modifierType = ModifierType.Normal;
     public int modifierValue = 0;
 
-    public bool repeatable = false;
+    public RepeatType repeatType = RepeatType.Normal;
+    public int repeatValue = 1;
+
+    public bool IsUsable(int usageInTurn, int usageInBattle)
+    {
+        switch (repeatType)
+        {
+            case CardSkill.RepeatType.Normal: return usageInTurn == 0; 
+            case CardSkill.RepeatType.Repeatable: return true;
+            case CardSkill.RepeatType.TurnCount: return usageInTurn < repeatValue;
+            case CardSkill.RepeatType.BattleCount: return usageInBattle < repeatValue;
+            default: return false;
+        }
+    }
 
     public bool TestDice(int diceValue)
     {

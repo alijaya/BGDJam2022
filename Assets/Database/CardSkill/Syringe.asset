@@ -19,4 +19,5 @@ MonoBehaviour:
   requirementValue: 6
   modifierType: 1
   modifierValue: 10
-  repeatable: 0
+  repeatType: 3
+  repeatValue: 1

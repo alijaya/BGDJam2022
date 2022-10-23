@@ -13,6 +13,8 @@ public class SkillMB : MonoBehaviour
 
     private bool visible = true;
     private CanvasGroup canvasGroup;
+    private int usageInTurn = 0;
+    private int usageInBattle = 0;
 
     private void Awake()
     {
@@ -22,7 +24,19 @@ public class SkillMB : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetUsageInTurn();
+        ResetUsageInBattle();
         UpdateDisplay();
+    }
+
+    public void ResetUsageInBattle()
+    {
+        usageInBattle = 0;
+    }
+
+    public void ResetUsageInTurn()
+    {
+        usageInTurn = 0;
     }
 
     public void UpdateDisplay()
@@ -61,6 +75,18 @@ public class SkillMB : MonoBehaviour
         UpdateDisplay();
     }
 
+    public void ShowHideByUsable()
+    {
+        if (cardSkill.IsUsable(usageInTurn, usageInBattle))
+        {
+            Show();
+        }
+        else
+        {
+            Hide();
+        }
+    }
+
     public bool TryActivate(DiceController dice)
     {
         var diceValue = dice.diceValue;
@@ -71,10 +97,10 @@ public class SkillMB : MonoBehaviour
         {
             dice.Hide();
 
-            if (!cardSkill.repeatable)
-            {
-                Hide();
-            }
+            usageInTurn++;
+            usageInBattle++;
+
+            ShowHideByUsable();
             return true;
         }
         else
