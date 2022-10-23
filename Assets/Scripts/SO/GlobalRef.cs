@@ -33,8 +33,16 @@ public class GlobalRef : GlobalSO<GlobalRef>
 
     public FloatReference bgmVolume;
     public FloatReference sfxVolume;
-    public AudioClip defaultBgm;
-    public AudioClip battleBgm;
+    public AudioClip bgmDefault;
+    public AudioClip bgmBattle;
+    public AudioClip sfxAttack;
+    public AudioClip sfxGun;
+    public AudioClip sfxHeal;
+    public AudioClip sfxLoot;
+    public AudioClip sfxShop;
+    public AudioClip sfxSip;
+    public AudioClip sfxLose;
+    public AudioClip sfxWin;
 
     public void GoToMainMenu()
     {
@@ -70,13 +78,46 @@ public class GlobalRef : GlobalSO<GlobalRef>
         mapPaths.Clear();
     }
 
-    public void PlayDefaultBGM()
+    public void PlayBGMDefault()
     {
-        AudioManager.Instance.PlayBGM(defaultBgm);
+        AudioManager.Instance.PlayBGM(bgmDefault);
     }
 
-    public void PlayBattleBGM()
+    public void PlayBGMBattle()
     {
-        AudioManager.Instance.PlayBGM(battleBgm);
+        AudioManager.Instance.PlayBGM(bgmBattle);
+    }
+
+    public void PlaySFXAttack()
+    {
+        AudioManager.Instance.PlaySFX(sfxAttack);
+    }
+    public void PlaySFXGun()
+    {
+        AudioManager.Instance.PlaySFX(sfxGun);
+    }
+    public void PlaySFXHeal()
+    {
+        AudioManager.Instance.PlaySFX(sfxHeal);
+    }
+    public void PlaySFXLoot()
+    {
+        AudioManager.Instance.PlaySFX(sfxLoot);
+    }
+    public void PlaySFXShop()
+    {
+        AudioManager.Instance.PlaySFX(sfxShop);
+    }
+    public void PlaySFXSip()
+    {
+        AudioManager.Instance.PlaySFX(sfxSip);
+    }
+    public void PlaySFXLose()
+    {
+        AudioManager.Instance.PlaySFX(sfxLose);
+    }
+    public void PlaySFXWin()
+    {
+        AudioManager.Instance.PlaySFX(sfxWin);
     }
 }

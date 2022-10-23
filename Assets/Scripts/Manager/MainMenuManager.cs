@@ -7,7 +7,7 @@ public class MainMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GlobalRef.instance.PlayDefaultBGM();
+        GlobalRef.instance.PlayBGMDefault();
         GlobalRef.instance.ResetData();
     }
 

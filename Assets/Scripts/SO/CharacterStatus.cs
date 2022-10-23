@@ -19,6 +19,7 @@ public class CharacterStatus : ScriptableObject
 
     public void DoDamaged(int damage)
     {
+        GlobalRef.instance.PlaySFXAttack();
         currentHP.Value -= damage;
         if (currentHP.Value <= 0)
         {
@@ -28,11 +29,13 @@ public class CharacterStatus : ScriptableObject
 
     public void DoHealed(int damage)
     {
+        GlobalRef.instance.PlaySFXHeal();
         currentHP.Value += damage;
     }
 
     public void DoUpgradeMaxHealth(int health)
     {
+        GlobalRef.instance.PlaySFXHeal();
         maxHP.Value += health;
         currentHP.Value += health;
     }

@@ -6,7 +6,8 @@ public class EndingManager : MonoBehaviour
 {
     public void Start()
     {
-        GlobalRef.instance.PlayDefaultBGM();
+        GlobalRef.instance.PlayBGMDefault();
+        GlobalRef.instance.PlaySFXWin();
     }
 
     public void OnMainMenuClick()

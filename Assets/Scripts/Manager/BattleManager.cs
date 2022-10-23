@@ -28,7 +28,7 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
-        GlobalRef.instance.PlayBattleBGM();
+        GlobalRef.instance.PlayBGMBattle();
         StartWithMapEncounter();
     }
 
@@ -70,6 +70,7 @@ public class BattleManager : MonoBehaviour
 
     private void OnPlayerDeath()
     {
+        GlobalRef.instance.PlaySFXLose();
         isWinning.Value = false;
         isPlaying.Value = false;
 
@@ -80,6 +81,7 @@ public class BattleManager : MonoBehaviour
 
     private void OnEnemyDeath()
     {
+        GlobalRef.instance.PlaySFXWin();
         lootValue.Value = enemy.lootValue;
         isWinning.Value = true;
         isPlaying.Value = false;

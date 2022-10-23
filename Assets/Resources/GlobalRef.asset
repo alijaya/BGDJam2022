@@ -88,5 +88,13 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 11400000, guid: f3fca39f232b3470fa1efe0c74742ec8, type: 2}
     _variableInstancer: {fileID: 0}
-  defaultBgm: {fileID: 8300000, guid: 0f9ae6e17a7cf405db238908f210bbec, type: 3}
-  battleBgm: {fileID: 8300000, guid: 8a377e2dfa5e84bd7b57088e532740d8, type: 3}
+  bgmDefault: {fileID: 8300000, guid: 0f9ae6e17a7cf405db238908f210bbec, type: 3}
+  bgmBattle: {fileID: 8300000, guid: 8a377e2dfa5e84bd7b57088e532740d8, type: 3}
+  sfxAttack: {fileID: 8300000, guid: c89b18ff3d9714344bdafca9835e5556, type: 3}
+  sfxGun: {fileID: 8300000, guid: e5e4e3c08a9c74f6badb58017f115615, type: 3}
+  sfxHeal: {fileID: 8300000, guid: d064f51f9ab6d41d9b832dbe0323841a, type: 3}
+  sfxLoot: {fileID: 8300000, guid: d8cd5b2d82aa34656a482ec052432eef, type: 3}
+  sfxShop: {fileID: 8300000, guid: bfeba2a49d17f41bcb959d5fd338da5b, type: 3}
+  sfxSip: {fileID: 8300000, guid: eb24b637388004b35938cf8c78a323a3, type: 3}
+  sfxLose: {fileID: 8300000, guid: 48ffecd06e40c46228f26f8541197cae, type: 3}
+  sfxWin: {fileID: 8300000, guid: acd9b3bcab7784774b43d6adc396174e, type: 3}

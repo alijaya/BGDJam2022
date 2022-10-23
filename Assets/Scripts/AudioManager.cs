@@ -4,46 +4,60 @@ using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using System;
 
-[RequireComponent(typeof(AudioSource))]
 public class AudioManager : GlobalMB<AudioManager>
 {
-    public AudioSource audioSource;
+    public AudioSource bgmSource;
+    public AudioSource sfxSource;
     public Dictionary<AudioSource, float> lastTime = new Dictionary<AudioSource, float>();
 
     public FloatReference bgmVolume;
     public FloatEvent bgmVolumeChanged;
 
+    public FloatReference sfxVolume;
+    public FloatEvent sfxVolumeChanged;
+
     protected override void SingletonAwakened()
     {
-        audioSource = GetComponent<AudioSource>();
+        bgmSource = gameObject.AddComponent<AudioSource>();
+        sfxSource = gameObject.AddComponent<AudioSource>();
 
         bgmVolume = GlobalRef.instance.bgmVolume;
         bgmVolumeChanged = bgmVolume.GetEvent<FloatEvent>();
         bgmVolumeChanged.Register(UpdateBGMVolume);
         UpdateBGMVolume();
+
+        sfxVolume = GlobalRef.instance.sfxVolume;
+        sfxVolumeChanged = sfxVolume.GetEvent<FloatEvent>();
+        sfxVolumeChanged.Register(UpdateSFXVolume);
+        UpdateSFXVolume();
     }
 
     private void UpdateBGMVolume()
     {
-        audioSource.volume = bgmVolume.Value;
+        bgmSource.volume = bgmVolume.Value;
+    }
+
+    private void UpdateSFXVolume()
+    {
+        sfxSource.volume = sfxVolume.Value;
     }
 
     public void PlaySFX(AudioClip clip)
     {
-        audioSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip);
     }
 
     public void PlayBGM(AudioClip clip)
     {
-        if (clip != audioSource.clip)
+        if (clip != bgmSource.clip)
         {
-            lastTime[audioSource] = audioSource.time;
-            audioSource.clip = clip;
-            if (lastTime.TryGetValue(audioSource, out var time))
+            lastTime[bgmSource] = bgmSource.time;
+            bgmSource.clip = clip;
+            if (lastTime.TryGetValue(bgmSource, out var time))
             {
-                audioSource.time = time;
+                bgmSource.time = time;
             }
-            audioSource.Play();
+            bgmSource.Play();
         }
     }
 }
