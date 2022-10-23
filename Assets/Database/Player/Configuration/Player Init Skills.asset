@@ -18,6 +18,6 @@ MonoBehaviour:
   Added: {fileID: 0}
   Removed: {fileID: 0}
   list:
-  - {fileID: 11400000, guid: 79d3052b925f542fe862747a4c6b7795, type: 2}
-  - {fileID: 11400000, guid: e9151b2b1533741c6a23a5de724e4491, type: 2}
+  - {fileID: 11400000, guid: 6dfbc3e5af81f4a568cc9f2562c9e2a1, type: 2}
+  - {fileID: 11400000, guid: 7b5a2c8c2e22a4c84a0f6762ceaac6ad, type: 2}
   - {fileID: 11400000, guid: fa01522608b534787b755c48026353db, type: 2}
