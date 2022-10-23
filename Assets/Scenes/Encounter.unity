@@ -1469,7 +1469,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1008522357}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
-        m_MethodName: StartBattleFullHP
+        m_MethodName: OnClickLoseQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2603,7 +2603,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1008522357}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
-        m_MethodName: StartRandomFullHP
+        m_MethodName: OnClickLoseQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2853,7 +2853,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1008522357}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
-        m_MethodName: StartRandom
+        m_MethodName: OnClickWin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

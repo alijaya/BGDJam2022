@@ -12,7 +12,7 @@ namespace UnityAtoms.BaseAtoms
     {
         protected override bool ValueEquals(Enemy other)
         {
-            throw new NotImplementedException();
+            return _value == other;
         }
     }
 }

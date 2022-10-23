@@ -21,5 +21,53 @@ MonoBehaviour:
     _variable: {fileID: 11400000, guid: f567b471ea3ac4acea63b347e1516987, type: 2}
     _variableInstancer: {fileID: 0}
   playerSkills: {fileID: 11400000, guid: ef6ec2ac95a5c41f699d53f68891ff55, type: 2}
+  mapPaths: {fileID: 11400000, guid: 1bf5bbcc2cf4547d983c1f3046007634, type: 2}
+  currentMapEncounter:
+    _usage: 2
+    _value: {fileID: 0}
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 66a85f3d77f3d4421853c6feee31b9fd, type: 2}
+    _variableInstancer: {fileID: 0}
+  currentMapShop: {fileID: 11400000, guid: d91a84d185ec54b859cd897c10d429b3, type: 2}
+  currentMapLoot:
+    _usage: 2
+    _value: {fileID: 0}
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 5949498d3dcd741c4833b8f23dd79cf9, type: 2}
+    _variableInstancer: {fileID: 0}
+  currentMapHeal:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 45136b55c08bb40b699a56617392707a, type: 2}
+    _variableInstancer: {fileID: 0}
+  playerInitHP:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: bdcbc4cb3b5f448e68c384ef45a72e9b, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  playerInitMoney:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: d5fe67a38caec40f5ba059f3c3030420, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  playerInitSkills: {fileID: 11400000, guid: 09e351188343f49dbb0a1054a0435b81, type: 2}
   enemies: {fileID: 11400000, guid: 1d2d64c8b1c094471bd33e5ba2dece5a, type: 2}
   shopItems: {fileID: 11400000, guid: 1475ba2122155014899eb8242a48ed29, type: 2}
+  sceneMainMenu:
+    sceneAsset: {fileID: 102900000, guid: ea4448b858f0a444ab23ba8cffdd309d, type: 3}
+    sceneAssetGuidHex: ea4448b858f0a444ab23ba8cffdd309d
+  sceneMap:
+    sceneAsset: {fileID: 102900000, guid: de952917d5b894d2cb75e0996fc79afd, type: 3}
+    sceneAssetGuidHex: de952917d5b894d2cb75e0996fc79afd
+  sceneEncounter:
+    sceneAsset: {fileID: 102900000, guid: 6afff278741d1421ca9f255a0669bfcc, type: 3}
+    sceneAssetGuidHex: 6afff278741d1421ca9f255a0669bfcc
+  sceneShop:
+    sceneAsset: {fileID: 102900000, guid: 332411a5896f39c48adfde7970085260, type: 3}
+    sceneAssetGuidHex: 332411a5896f39c48adfde7970085260
+  sceneLoot:
+    sceneAsset: {fileID: 0}
+    sceneAssetGuidHex: 00000000000000000000000000000000

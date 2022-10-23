@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76ab052964c884e89acb29039ee40845, type: 3}
-  m_Name: Enemy List
+  m_Name: The Boss
   m_EditorClassIdentifier: 
   _developerDescription: 
   Cleared: {fileID: 0}
@@ -18,8 +18,4 @@ MonoBehaviour:
   Added: {fileID: 0}
   Removed: {fileID: 0}
   list:
-  - {fileID: 11400000, guid: c9182dd3eac3c491aa7e2afe201ae2f1, type: 2}
-  - {fileID: 11400000, guid: 8379fa9ca1207453bae0476b1c618056, type: 2}
-  - {fileID: 11400000, guid: 5267488fda71e4e8b9f59597dfdc1b17, type: 2}
-  - {fileID: 11400000, guid: c3c3c6ec9a30d4675bf539ac96f2abf7, type: 2}
   - {fileID: 11400000, guid: 772186c92a9b64518bdf437078c8a4f3, type: 2}

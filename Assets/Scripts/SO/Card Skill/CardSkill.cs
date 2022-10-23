@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class CardSkill : ScriptableObject
+public class CardSkill : ScriptableObject, System.IEquatable<CardSkill>
 {
     public enum RequirementType
     {
@@ -90,5 +90,10 @@ public class CardSkill : ScriptableObject
     public virtual void DoAction(int diceValue, CharacterStatus attacker, CharacterStatus defender)
     {
         defender.DoDamaged(diceValue);
+    }
+
+    public bool Equals(CardSkill other)
+    {
+        return this == other;
     }
 }

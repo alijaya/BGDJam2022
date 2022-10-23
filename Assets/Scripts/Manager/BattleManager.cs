@@ -168,4 +168,15 @@ public class BattleManager : MonoBehaviour
             skill.ShowHideByUsable();
         }
     }
+
+    public void OnClickLoseQuit()
+    {
+        GlobalRef.instance.GoToMainMenu();
+    }
+
+    public void OnClickWin()
+    {
+        GlobalRef.instance.playerMoney.Value += lootValue.Value;
+        GlobalRef.instance.GoToMap();
+    }
 }

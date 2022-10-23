@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (3)
+      value: Node C
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[0]
       value: 
       objectReference: {fileID: 2073351811}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &5969078 stripped
@@ -334,8 +338,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (6)
+      value: Boss Node
       objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 61c0966f8e850419381221ed2d4106e0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &19330372 stripped
@@ -443,6 +455,14 @@ PrefabInstance:
       value: Start Node
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: done
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -454,6 +474,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[1]
       value: 
       objectReference: {fileID: 912356626}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &78822855 stripped
@@ -821,7 +845,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (2)
+      value: Node B
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: done
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -835,6 +871,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[1]
       value: 
       objectReference: {fileID: 2136269626}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &912356625 stripped
@@ -1260,7 +1300,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (8)
+      value: Node G
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleHealMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleHealMin
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -1270,6 +1322,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[0]
       value: 
       objectReference: {fileID: 954478894}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &1358845378 stripped
@@ -1389,8 +1445,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (4)
+      value: Node D
       objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: done
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleShopCards
+      value: 
+      objectReference: {fileID: 11400000, guid: 1475ba2122155014899eb8242a48ed29, type: 2}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
       value: 2
@@ -1421,6 +1493,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589c2acbc08764121bf5125e6405b529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1796684100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796684102}
+  - component: {fileID: 1796684101}
+  m_Layer: 0
+  m_Name: MapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1796684101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796684100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23895af0d584c44549d1952961066ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1796684102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796684100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41661638, y: -0.4296043, z: 647.0686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1861488071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1514,7 +1630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (1)
+      value: Node A
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -1528,6 +1644,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[1]
       value: 
       objectReference: {fileID: 1577060607}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &1861488072 stripped
@@ -1639,7 +1759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (7)
+      value: Node F
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -1649,6 +1769,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[0]
       value: 
       objectReference: {fileID: 954478894}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &2073351810 stripped
@@ -1889,7 +2013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000637215358808301, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: m_Name
-      value: Node (5)
+      value: Node E
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: nodeState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
@@ -1899,6 +2027,10 @@ PrefabInstance:
       propertyPath: nextNode.Array.data[0]
       value: 
       objectReference: {fileID: 1358845379}
+    - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
+      propertyPath: possibleEncounterEnemies
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f2068c6e28224d9abea2eddf54e4f46, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
 --- !u!224 &2136269625 stripped

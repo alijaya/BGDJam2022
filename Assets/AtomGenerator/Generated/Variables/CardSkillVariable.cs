@@ -12,7 +12,7 @@ namespace UnityAtoms.BaseAtoms
     {
         protected override bool ValueEquals(CardSkill other)
         {
-            throw new NotImplementedException();
+            return _value == other;
         }
     }
 }

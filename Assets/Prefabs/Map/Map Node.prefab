@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1000637215358808290}
   - component: {fileID: 1000637215358808291}
   - component: {fileID: 7137982835816564764}
+  - component: {fileID: 1167691479656317877}
   m_Layer: 5
   m_Name: Map Node
   m_TagString: Untagged
@@ -30,7 +31,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,8 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Material: {fileID: 2100000, guid: 6fd205b4fcae6420191607450e17a9eb, type: 2}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -97,9 +98,9 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.8}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -121,7 +122,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1000637215358808290}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7137982835816564764}
+        m_TargetAssemblyTypeName: MapNode, Assembly-CSharp
+        m_MethodName: ExecuteNode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7137982835816564764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,4 +147,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589c2acbc08764121bf5125e6405b529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nodeType: 0
+  possibleEncounterEnemies: {fileID: 0}
+  possibleShopCards: {fileID: 0}
+  possibleLootCards: {fileID: 0}
+  possibleHealMin: 0
+  possibleHealMax: 0
   nextNode: []
+  nodeState: 0
+  baseSprites:
+  - {fileID: 21300000, guid: 960630a5e475d0c4caf4ebedeede4c0b, type: 3}
+  - {fileID: 21300000, guid: 2670c8c6a09406e4f930da3897c74f7e, type: 3}
+  - {fileID: 21300000, guid: 891cab13f3bc9864a9e0459eb3f66cda, type: 3}
+  - {fileID: 21300000, guid: 50ba1d2bd4007584789e8b1fdc5f3b0d, type: 3}
+  doneSprites:
+  - {fileID: 21300000, guid: 7803326fcea12aa4ba0170fd35bc5caf, type: 3}
+  - {fileID: 21300000, guid: b0fbc0c699b6cd6499a178271e251b12, type: 3}
+  - {fileID: 21300000, guid: 320bbe9b795a10c4a8dbc258c6118fa3, type: 3}
+  - {fileID: 21300000, guid: 8457e0a259965c9479e4993093e39478, type: 3}
+--- !u!95 &1167691479656317877
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000637215358808301}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d6149b7f06864824863ced7dd849e3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

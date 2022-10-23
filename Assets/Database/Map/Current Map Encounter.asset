@@ -9,17 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf8a67b68db3d4650908f8cf6adeda60, type: 3}
-  m_Name: Player HP
+  m_Script: {fileID: 11500000, guid: ff8aa3bc8f12d49459c914a8ab786bcb, type: 3}
+  m_Name: Current Map Encounter
   m_EditorClassIdentifier: 
-  _developerDescription: Player HP
+  _developerDescription: 
   _id: 
-  _value: 15
+  _value: {fileID: 0}
   _changed: {fileID: 0}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 15
-  _initialValue: 15
-  _preChangeTransformers:
-  - {fileID: 11400000, guid: 90b95b13caa6a4b5abcb1ddd7be19452, type: 2}
+  _oldValue: {fileID: 0}
+  _initialValue: {fileID: 0}
+  _preChangeTransformers: []
