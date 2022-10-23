@@ -28,10 +28,13 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 11400000, guid: 66a85f3d77f3d4421853c6feee31b9fd, type: 2}
     _variableInstancer: {fileID: 0}
-  currentMapShop: {fileID: 11400000, guid: d91a84d185ec54b859cd897c10d429b3, type: 2}
+  currentMapShop: {fileID: 11400000, guid: b5c959caebec54f5bbc7590f6eeff481, type: 2}
   currentMapLoot:
     _usage: 2
-    _value: {fileID: 0}
+    _value:
+      type: 0
+      upgrade: {fileID: 0}
+      skill: {fileID: 0}
     _constant: {fileID: 0}
     _variable: {fileID: 11400000, guid: 5949498d3dcd741c4833b8f23dd79cf9, type: 2}
     _variableInstancer: {fileID: 0}
@@ -71,3 +74,6 @@ MonoBehaviour:
   sceneLoot:
     sceneAsset: {fileID: 102900000, guid: 04a0e78b236f7413c8f97f953ce3deba, type: 3}
     sceneAssetGuidHex: 04a0e78b236f7413c8f97f953ce3deba
+  sceneEnding:
+    sceneAsset: {fileID: 102900000, guid: b1a8bc6636a244056a4fd4442413215b, type: 3}
+    sceneAssetGuidHex: b1a8bc6636a244056a4fd4442413215b

@@ -5,7 +5,7 @@ using TMPro;
 
 public class CardPriceMB : MonoBehaviour
 {
-    public CardSkill cardSkill;
+    public UpgradeOrSkill item;
 
     public TextMeshProUGUI text;
 
@@ -17,6 +17,12 @@ public class CardPriceMB : MonoBehaviour
 
     public void UpdateDisplay()
     {
-        text.text = "" + cardSkill.price;
+        if (item.type == UpgradeOrSkill.UpgradeOrSkillType.Upgrade)
+        {
+            text.text = "" + item.upgrade?.price;
+        } else if (item.type == UpgradeOrSkill.UpgradeOrSkillType.Skill)
+        {
+            text.text = "" + item.skill?.price;
+        }
     }
 }

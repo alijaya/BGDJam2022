@@ -89,7 +89,7 @@ public class CardSkill : ScriptableObject, System.IEquatable<CardSkill>
 
     public virtual void DoAction(int diceValue, CharacterStatus attacker, CharacterStatus defender)
     {
-        defender.DoDamaged(diceValue);
+
     }
 
     public bool Equals(CardSkill other)

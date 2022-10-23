@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e0a9189752045a4bb0e6c5df348be3, type: 3}
+  m_Name: All Shop Items
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  Cleared: {fileID: 0}
+  _startCleared: 0
+  Added: {fileID: 0}
+  Removed: {fileID: 0}
+  list:
+  - type: 0
+    upgrade: {fileID: 11400000, guid: 8547ed3007d4f6245acbdbea493b4331, type: 2}
+    skill: {fileID: 0}
+  - type: 0
+    upgrade: {fileID: 11400000, guid: 4652028c5103e3b429f2ebbef1de7852, type: 2}
+    skill: {fileID: 0}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: fe69e8f10b07e4259872d273dc1f3eb6, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 7b5a2c8c2e22a4c84a0f6762ceaac6ad, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 3cb3f078e27324ea3b5ac91c45ddcc43, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 2e5e63c521e0643098f59104c5a55895, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 6dfbc3e5af81f4a568cc9f2562c9e2a1, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 840d487d4cac4480d9f0dba0ff9bfca1, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 2da0bd969f11544d58c27189f27044cb, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: ce60096e813dc4abeacfd999aeb5ba75, type: 2}
+  - type: 1
+    upgrade: {fileID: 0}
+    skill: {fileID: 11400000, guid: 673e0fc9c41564e0f96c61dfcf4f0039, type: 2}

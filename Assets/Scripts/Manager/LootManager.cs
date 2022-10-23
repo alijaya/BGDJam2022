@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LootManager : MonoBehaviour
 {
-    public LootItemMB lootItem;
+    public LootItemMB lootSkill;
+    public UpgradeMB lootUpgrade;
     public List<InventoryMB> skills;
 
     public void Start()
@@ -16,8 +17,22 @@ public class LootManager : MonoBehaviour
             skill.UpdateDisplay();
         }
 
-        var item = GlobalRef.instance.currentMapLoot;
-        lootItem.cardSkill = item;
+        var item = GlobalRef.instance.currentMapLoot.Value;
+
+        if (item.type == UpgradeOrSkill.UpgradeOrSkillType.Skill)
+        {
+            lootSkill.cardSkill = item.skill;
+            lootSkill.UpdateDisplay();
+
+            lootUpgrade.Hide();
+        }
+        else if (item.type == UpgradeOrSkill.UpgradeOrSkillType.Upgrade)
+        {
+            lootUpgrade.upgrade = item.upgrade;
+            lootUpgrade.UpdateDisplay();
+
+            lootSkill.GetComponent<SkillMB>().Hide();
+        }
     }
 
     public void LeaveCreate()

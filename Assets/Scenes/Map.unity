@@ -229,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: possibleLootCards
       value: 
-      objectReference: {fileID: 11400000, guid: 1475ba2122155014899eb8242a48ed29, type: 2}
+      objectReference: {fileID: 11400000, guid: 5926502898dc54640a4c4a00d522429e, type: 2}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
       value: 1
@@ -1430,7 +1430,7 @@ PrefabInstance:
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: possibleShopCards
       value: 
-      objectReference: {fileID: 11400000, guid: 1475ba2122155014899eb8242a48ed29, type: 2}
+      objectReference: {fileID: 11400000, guid: 5926502898dc54640a4c4a00d522429e, type: 2}
     - target: {fileID: 7137982835816564764, guid: 1194a1dbd8ca94338a57e8c48f8b1189, type: 3}
       propertyPath: nextNode.Array.size
       value: 2
