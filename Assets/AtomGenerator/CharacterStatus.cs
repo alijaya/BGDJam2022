@@ -8,6 +8,7 @@ public class CharacterStatus : ScriptableObject
 {
     public IntReference currentHP;
     public IntReference maxHP;
+    public IntReference playerMoney;
     public VoidBaseEventReference deathEvent;
 
     public void DoDamaged(int damage)
@@ -22,5 +23,15 @@ public class CharacterStatus : ScriptableObject
     public void DoHealed(int damage)
     {
         currentHP.Value += damage;
+    }
+
+    public void DoDecMoney(int money)
+    {
+        playerMoney.Value -= money;
+    }
+
+    public void DoIncMoney(int money)
+    {
+        playerMoney.Value += money;
     }
 }

@@ -94,6 +94,7 @@ public class SkillMB : MonoBehaviour
             skill.Hide();
             cardSkill = skill.cardSkill;
             UpdateDisplay();
+            playerStatus.DoDecMoney(10);
             // Hide();
             
             return true;
