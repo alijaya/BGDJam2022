@@ -26,9 +26,9 @@ public class MapNode : MonoBehaviour
 
     public EnemyValueList possibleEncounterEnemies;
 
-    public CardSkillValueList possibleShopCards;
+    public UpgradeOrSkillValueList possibleShopCards;
 
-    public CardSkillValueList possibleLootCards;
+    public UpgradeOrSkillValueList possibleLootCards;
 
     public int possibleHealMin = 0;
     public int possibleHealMax = 0;
@@ -90,7 +90,7 @@ public class MapNode : MonoBehaviour
                 GlobalRef.instance.GoToEncounter();
                 break;
             case NodeType.Shop:
-                var cards = new List<CardSkill>(possibleShopCards);
+                var cards = new List<UpgradeOrSkill>(possibleShopCards);
                 cards.Shuffle();
                 GlobalRef.instance.currentMapShop.List = cards.Take(3).ToList();
                 GlobalRef.instance.GoToShop();

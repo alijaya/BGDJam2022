@@ -15,11 +15,32 @@ public class MapManager : MonoBehaviour
         {
             mapNodes.Add(mapNode.name, mapNode);
         }
+
+        CheckWin();
     }
 
     private void Start()
     {
         UpdateDisplay();
+    }
+
+    public void CheckWin()
+    {
+        // check if winning
+        var mapPaths = GlobalRef.instance.mapPaths;
+        if (mapPaths.Count > 0)
+        {
+            var currentNodeName = mapPaths[mapPaths.Count - 1];
+            // win if current node doesn't have any next node
+            if (mapNodes.TryGetValue(currentNodeName, out var node))
+            {
+                if (node.nextNode.Count == 0)
+                {
+                    // Win!
+                    GlobalRef.instance.GoToEnding();
+                }
+            }
+        }
     }
 
     public void UpdateDisplay()

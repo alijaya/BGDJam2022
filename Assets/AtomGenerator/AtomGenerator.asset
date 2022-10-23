@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
   m_Name: AtomGenerator
   m_EditorClassIdentifier: 
-  FullQualifiedName: Enemy, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  FullQualifiedName: UpgradeOrSkill, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
   Namespace: 
-  BaseType: Enemy
+  BaseType: UpgradeOrSkill
   GenerationOptions: 4194303
   Scripts:
   - {fileID: 0}

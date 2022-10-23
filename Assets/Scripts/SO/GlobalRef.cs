@@ -15,21 +15,21 @@ public class GlobalRef : GlobalSO<GlobalRef>
 
     public StringValueList mapPaths;
     public EnemyReference currentMapEncounter;
-    public CardSkillValueList currentMapShop;
-    public CardSkillReference currentMapLoot;
+    public UpgradeOrSkillValueList currentMapShop;
+    public UpgradeOrSkillReference currentMapLoot;
     public IntReference currentMapHeal;
 
     public IntReference playerInitHP;
     public IntReference playerInitMoney;
     public CardSkillValueList playerInitSkills;
     public EnemyValueList enemies;
-    public CardSkillValueList shopItems;
 
     public SceneReference sceneMainMenu;
     public SceneReference sceneMap;
     public SceneReference sceneEncounter;
     public SceneReference sceneShop;
     public SceneReference sceneLoot;
+    public SceneReference sceneEnding;
 
     public void GoToMainMenu()
     {
@@ -50,6 +50,10 @@ public class GlobalRef : GlobalSO<GlobalRef>
     public void GoToLoot()
     {
         SceneManager.LoadScene(sceneLoot.Name);
+    }
+    public void GoToEnding()
+    {
+        SceneManager.LoadScene(sceneEnding.Name);
     }
 
     public void ResetData()

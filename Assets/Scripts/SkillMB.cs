@@ -54,8 +54,11 @@ public class SkillMB : MonoBehaviour
             canvasGroup.blocksRaycasts = false;
         }
 
-        textTitle.text = cardSkill.title;
-        textDescription.text = cardSkill.description;
+        if (cardSkill)
+        {
+            textTitle.text = cardSkill.title;
+            textDescription.text = cardSkill.description;
+        }
 
         foreach (var slot in GetComponentsInChildren<SlotMB>())
         {

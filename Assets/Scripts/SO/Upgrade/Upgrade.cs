@@ -19,8 +19,24 @@ public class Upgrade : ScriptableObject
     public UpgradeType type = UpgradeType.Health;
     public int value;
 
-    public virtual void DoUpgrade(UpgradeType type, CharacterStatus player, int value)
+    public bool TryBuyUpgrade()
     {
+        var money = GlobalRef.instance.playerMoney;
+        if (money.Value >= price)
+        {
+            money.Value -= price;
+            DoUpgrade();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void DoUpgrade()
+    {
+        var player = GlobalRef.instance.playerStatus;
         switch (type)
         {
             case UpgradeType.Health: player.DoHealed(value); break;
