@@ -11,7 +11,7 @@ public class EndTurn : MonoBehaviour
     {
         dice = GameObject.FindGameObjectsWithTag("Dice");
         foreach (GameObject die in dice) {
-            die.GetComponent<DiceController>().RollDie();
+            die.GetComponent<DiceController>().RollDice();
         }
 
         slots = GameObject.FindGameObjectsWithTag("Slot");
