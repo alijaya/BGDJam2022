@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad76d497767c34ecf88c7aa597da29c0, type: 3}
-  m_Name: Player Init HP
+  m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
+  m_Name: AtomGenerator
   m_EditorClassIdentifier: 
-  _developerDescription: 
-  _id: 
-  _value: 150
+  FullQualifiedName: 
+  Namespace: 
+  BaseType: 
+  GenerationOptions: 4194303
+  Scripts: []

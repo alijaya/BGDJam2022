@@ -30,11 +30,11 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 11400000, guid: 39c6b6e831d784020a4e0809d79d8348, type: 2}
     _variableInstancer: {fileID: 0}
-  playerMoney:
-    _usage: 2
-    _value: 0
+  diceCount:
+    _usage: 0
+    _value: 3
     _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: f567b471ea3ac4acea63b347e1516987, type: 2}
+    _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   deathEvent:
     _usage: 0
