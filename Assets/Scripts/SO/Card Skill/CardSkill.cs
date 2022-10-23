@@ -29,14 +29,15 @@ public class CardSkill : ScriptableObject
 
     public string title = "";
     public string description = "";
-
-    public bool repeatable = false;
+    public int price = 0;
 
     public RequirementType requirementType = RequirementType.Normal;
     public int requirementValue = 0; // ignored if Normal, Odd, Even, Pair
 
     public ModifierType modifierType = ModifierType.Normal;
     public int modifierValue = 0;
+
+    public bool repeatable = false;
 
     public bool TestDice(int diceValue)
     {

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Blunderbuss
   description: Deal 2 x N damage to enemy
-  repeatable: 0
+  price: 2
   requirementType: 2
   requirementValue: 4
   modifierType: 4
   modifierValue: 2
+  repeatable: 0

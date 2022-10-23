@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8721780688356796309
+--- !u!1001 &2870576373076587499
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -93,41 +93,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8529649988977335711, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
       propertyPath: m_Name
-      value: Skill Inventory
+      value: Skill Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
---- !u!1 &1105240265510550026 stripped
+--- !u!1 &5875281586969341556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8529649988977335711, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
-  m_PrefabInstance: {fileID: 8721780688356796309}
+  m_PrefabInstance: {fileID: 2870576373076587499}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &939003221922596418
+--- !u!114 &4282303374360798620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105240265510550026}
+  m_GameObject: {fileID: 5875281586969341556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79203eb889e3cf04a8fd4ab0120b0ccc, type: 3}
+  m_Script: {fileID: 11500000, guid: 05ebd8949875d5a4d9e86509ed73f689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2386113438670461412 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6346927386975764081, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
-  m_PrefabInstance: {fileID: 8721780688356796309}
-  m_PrefabAsset: {fileID: 0}
---- !u!225 &6702884490107436810
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2386113438670461412}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
+  returnToInitPosition: 1
+  dragAlpha: 1

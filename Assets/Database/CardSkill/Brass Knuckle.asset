@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Brass Knuckle
   description: Deal 1 damage to enemy (Repeatable)
-  repeatable: 1
+  price: 3
   requirementType: 0
   requirementValue: 0
   modifierType: 1
   modifierValue: 1
+  repeatable: 1

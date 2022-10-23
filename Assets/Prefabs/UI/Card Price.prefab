@@ -87,7 +87,6 @@ GameObject:
   - component: {fileID: 4353192526704914447}
   - component: {fileID: 4353192526704914440}
   - component: {fileID: 4353192526704914441}
-  - component: {fileID: 5711027207580791252}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -212,24 +211,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5711027207580791252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4353192526704914444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e326bdc3c09804de49c00d0c49998d16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    _usage: 2
-    _value: 0
-    _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: f567b471ea3ac4acea63b347e1516987, type: 2}
-    _variableInstancer: {fileID: 0}
 --- !u!1 &7232635912651890435
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,8 +221,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5267863204033521521}
   - component: {fileID: 4493344646109777125}
+  - component: {fileID: 3177254237476438382}
   m_Layer: 5
-  m_Name: Player Money
+  m_Name: Card Price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,3 +277,17 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &3177254237476438382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232635912651890435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0466b72c1586b489cb1d2d6b0ed022e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardSkill: {fileID: 0}
+  text: {fileID: 4353192526704914441}

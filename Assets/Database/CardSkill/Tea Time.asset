@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Tea Time
   description: Restore N HP to self
-  repeatable: 0
+  price: 3
   requirementType: 2
   requirementValue: 3
   modifierType: 0
   modifierValue: 0
+  repeatable: 0

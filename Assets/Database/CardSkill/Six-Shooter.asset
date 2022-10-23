@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Six-Shooter
   description: Deal 8 damage to enemy
-  repeatable: 0
+  price: 2
   requirementType: 1
   requirementValue: 6
   modifierType: 1
   modifierValue: 8
+  repeatable: 0

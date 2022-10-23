@@ -8,5 +8,6 @@ public class GlobalRef : GlobalSO<GlobalRef>
 {
     public CharacterStatus playerStatus;
     public CharacterStatus enemyStatus;
+    public IntReference playerMoney;
     public CardSkillValueList playerSkills;
 }
