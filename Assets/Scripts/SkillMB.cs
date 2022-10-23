@@ -82,4 +82,25 @@ public class SkillMB : MonoBehaviour
             return false;
         }
     }
+
+    public bool TryBuy(SkillMB skill)
+    {
+        var playerStatus = GlobalRef.instance.playerStatus;
+        var enemyStatus = GlobalRef.instance.enemyStatus;
+
+        // if (cardSkill.Buy(playerStatus, enemyStatus))
+        if(true)
+        {
+            skill.Hide();
+            cardSkill = skill.cardSkill;
+            UpdateDisplay();
+            // Hide();
+            
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

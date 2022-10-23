@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 2117801688534797328}
   - component: {fileID: 2585563983927964426}
   - component: {fileID: 1475958037611958480}
+  - component: {fileID: 8224848630943622997}
   - component: {fileID: 5356957803120926558}
+  - component: {fileID: 5529238375440909357}
   m_Layer: 5
   m_Name: Skill Inventory
   m_TagString: Untagged
@@ -79,6 +81,19 @@ MonoBehaviour:
   delta: 5
   quality: 0.1
   radius: 30
+--- !u!114 &8224848630943622997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810440202170439214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79203eb889e3cf04a8fd4ab0120b0ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
 --- !u!114 &5356957803120926558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +109,18 @@ MonoBehaviour:
   cardSkill: {fileID: 0}
   textTitle: {fileID: 9032366610244981004}
   textDescription: {fileID: 4140238750809083572}
+--- !u!225 &5529238375440909357
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810440202170439214}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1888449246459880915
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +267,6 @@ GameObject:
   - component: {fileID: 7311948201462701523}
   - component: {fileID: 566467337605369636}
   - component: {fileID: 9012634323474486878}
-  - component: {fileID: 7633756249631048616}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Slot
@@ -307,19 +333,6 @@ MonoBehaviour:
   delta: 5
   quality: 0.1
   radius: 1000
---- !u!114 &7633756249631048616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900575416154074424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587e382d725b34b468b0df38ae72888b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 8546790268147456881}
 --- !u!1 &5547077000780903449
 GameObject:
   m_ObjectHideFlags: 0
