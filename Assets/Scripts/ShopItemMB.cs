@@ -21,8 +21,11 @@ public class ShopItemMB : MonoBehaviour
 
     public void UpdateDisplay()
     {
-        skill.cardSkill = cardSkill;
-        skill.UpdateDisplay();
+        if (cardSkill)
+        {
+            skill.cardSkill = cardSkill;
+            skill.UpdateDisplay();
+        }
     }
 
 }

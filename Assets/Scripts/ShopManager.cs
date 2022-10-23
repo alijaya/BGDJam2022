@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Shop : MonoBehaviour
+public class ShopManager : MonoBehaviour
 {
     [SerializeField] private string scene = "Map";
 
     public List<InventoryMB> skills;
     public List<ShopItemMB> shopItems;
+    public List<CardPriceMB> cardPrices;
 
     public void Start()
     {
@@ -20,11 +21,17 @@ public class Shop : MonoBehaviour
             skill.UpdateDisplay();
         }
 
+        var items = new List<CardSkill>(GlobalRef.instance.shopItems);
+        items.Shuffle();
         for (var i = 0; i < shopItems.Count; i++)
         {
             var shop = shopItems[i];
-            shop.cardSkill = GlobalRef.instance.shopItems[Random.Range(0, GlobalRef.instance.shopItems.Count)];
+            var cardPrice = cardPrices[i];
+            shop.cardSkill = items[i];
             shop.UpdateDisplay();
+
+            cardPrice.cardSkill = shop.cardSkill;
+            cardPrice.UpdateDisplay();
         }
     }
 

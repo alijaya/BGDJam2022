@@ -15,7 +15,7 @@ public class CardPriceMB : MonoBehaviour
         UpdateDisplay();
     }
 
-    void UpdateDisplay()
+    public void UpdateDisplay()
     {
         text.text = "" + cardSkill.price;
     }

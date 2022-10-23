@@ -95,7 +95,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skill Inventory
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7385355273648796717, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}
 --- !u!1 &1105240265510550026 stripped
 GameObject:
@@ -114,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79203eb889e3cf04a8fd4ab0120b0ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryIndex: 0
 --- !u!1 &2386113438670461412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6346927386975764081, guid: 9881fcaf503cf4c28ba4b19bcaafcf4a, type: 3}

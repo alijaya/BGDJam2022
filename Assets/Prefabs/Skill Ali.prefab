@@ -585,7 +585,6 @@ GameObject:
   - component: {fileID: 4064733830068249366}
   - component: {fileID: 7403642434517181375}
   - component: {fileID: 4755364178938128717}
-  - component: {fileID: 7385355273648796717}
   - component: {fileID: 7940486073735877978}
   m_Layer: 5
   m_Name: Skill Ali
@@ -669,19 +668,6 @@ MonoBehaviour:
   cardSkill: {fileID: 0}
   textTitle: {fileID: 5087302229464297768}
   textDescription: {fileID: 804147515562932535}
---- !u!114 &7385355273648796717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8529649988977335711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c56ba150c495ad408509212be9b9f9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardSkill: {fileID: 0}
 --- !u!225 &7940486073735877978
 CanvasGroup:
   m_ObjectHideFlags: 0
