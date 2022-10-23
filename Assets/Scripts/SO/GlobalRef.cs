@@ -43,6 +43,8 @@ public class GlobalRef : GlobalSO<GlobalRef>
     public AudioClip sfxSip;
     public AudioClip sfxLose;
     public AudioClip sfxWin;
+    public AudioClip sfxClick;
+    public AudioClip sfxDice;
 
     public void GoToMainMenu()
     {
@@ -119,5 +121,13 @@ public class GlobalRef : GlobalSO<GlobalRef>
     public void PlaySFXWin()
     {
         AudioManager.Instance.PlaySFX(sfxWin);
+    }
+    public void PlaySFXClick()
+    {
+        AudioManager.Instance.PlaySFX(sfxClick);
+    }
+    public void PlaySFXDice()
+    {
+        AudioManager.Instance.PlaySFX(sfxDice);
     }
 }

@@ -98,3 +98,5 @@ MonoBehaviour:
   sfxSip: {fileID: 8300000, guid: eb24b637388004b35938cf8c78a323a3, type: 3}
   sfxLose: {fileID: 8300000, guid: 48ffecd06e40c46228f26f8541197cae, type: 3}
   sfxWin: {fileID: 8300000, guid: acd9b3bcab7784774b43d6adc396174e, type: 3}
+  sfxClick: {fileID: 8300000, guid: f00c28e71bebe49d986f621c049b9bb6, type: 3}
+  sfxDice: {fileID: 8300000, guid: 8bc1df33b71da4990b4299709658a28b, type: 3}
