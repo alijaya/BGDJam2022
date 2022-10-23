@@ -17,4 +17,4 @@ MonoBehaviour:
   maxHP: 30
   lootValue: 8
   minDamage: 1
-  maxDamage: 6
+  maxDamage: 3
