@@ -3747,6 +3747,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5513001512901378486, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
+      propertyPath: characterStatus
+      value: 
+      objectReference: {fileID: 11400000, guid: 09895fd67907e4814a92b19e9aa76e79, type: 2}
+    - target: {fileID: 5513001512901378486, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
       propertyPath: maxHealth._usage
       value: 2
       objectReference: {fileID: 0}
@@ -3883,6 +3887,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2746666188366327657, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746666188366327657, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746666188366327657, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3100172387355468948, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
       propertyPath: m_Name
       value: Health Bar
@@ -3991,6 +4007,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5513001512901378486, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
+      propertyPath: characterStatus
+      value: 
+      objectReference: {fileID: 11400000, guid: f4c463dc4595d4805953f273f982c8cd, type: 2}
     - target: {fileID: 5513001512901378486, guid: 6395572fb57ef498db07a46ed8339543, type: 3}
       propertyPath: maxHealth._usage
       value: 2

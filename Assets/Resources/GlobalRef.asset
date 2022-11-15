@@ -58,6 +58,8 @@ MonoBehaviour:
     _variableInstancer: {fileID: 0}
   playerInitSkills: {fileID: 11400000, guid: 09e351188343f49dbb0a1054a0435b81, type: 2}
   enemies: {fileID: 11400000, guid: 1d2d64c8b1c094471bd33e5ba2dece5a, type: 2}
+  prefabDamageCounter: {fileID: 3516329626138482971, guid: c61a36c73ee9a404fa2cbc00189120b5, type: 3}
+  prefabHealCounter: {fileID: 3784383476172036381, guid: f9676b791ec3c43dcbba6bc998fd1e16, type: 3}
   sceneMainMenu:
     sceneAsset: {fileID: 102900000, guid: ea4448b858f0a444ab23ba8cffdd309d, type: 3}
     sceneAssetGuidHex: ea4448b858f0a444ab23ba8cffdd309d

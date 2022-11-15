@@ -24,6 +24,9 @@ public class GlobalRef : GlobalSO<GlobalRef>
     public CardSkillValueList playerInitSkills;
     public EnemyValueList enemies;
 
+    public DamageCounter prefabDamageCounter;
+    public DamageCounter prefabHealCounter;
+
     public SceneReference sceneMainMenu;
     public SceneReference sceneMap;
     public SceneReference sceneEncounter;

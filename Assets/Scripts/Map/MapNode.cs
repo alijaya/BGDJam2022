@@ -103,7 +103,7 @@ public class MapNode : MonoBehaviour
                 GlobalRef.instance.PlaySFXSip();
                 var heal = Random.Range(possibleHealMin, possibleHealMax + 1);
                 GlobalRef.instance.currentMapHeal.Value = heal;
-                GlobalRef.instance.playerStatus.currentHP.Value += heal;
+                GlobalRef.instance.playerStatus.DoHealed(heal);
                 mapManager.UpdateDisplay();
                 break;
         }

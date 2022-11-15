@@ -10,25 +10,16 @@ public class AudioManager : GlobalMB<AudioManager>
     public AudioSource sfxSource;
     public Dictionary<AudioSource, float> lastTime = new Dictionary<AudioSource, float>();
 
-    public FloatReference bgmVolume;
-    public FloatEvent bgmVolumeChanged;
+    public FloatVariable bgmVolume;
 
-    public FloatReference sfxVolume;
-    public FloatEvent sfxVolumeChanged;
+    public FloatVariable sfxVolume;
 
     protected override void SingletonAwakened()
     {
-        bgmSource = gameObject.AddComponent<AudioSource>();
-        sfxSource = gameObject.AddComponent<AudioSource>();
-
-        bgmVolume = GlobalRef.instance.bgmVolume;
-        bgmVolumeChanged = bgmVolume.GetEvent<FloatEvent>();
-        bgmVolumeChanged.Register(UpdateBGMVolume);
+        bgmVolume.Changed.Register(UpdateBGMVolume);
         UpdateBGMVolume();
 
-        sfxVolume = GlobalRef.instance.sfxVolume;
-        sfxVolumeChanged = sfxVolume.GetEvent<FloatEvent>();
-        sfxVolumeChanged.Register(UpdateSFXVolume);
+        sfxVolume.Changed.Register(UpdateSFXVolume);
         UpdateSFXVolume();
     }
 
@@ -42,9 +33,9 @@ public class AudioManager : GlobalMB<AudioManager>
         sfxSource.volume = sfxVolume.Value;
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySFX(AudioClip clip, float volume = 1f)
     {
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip, volume);
     }
 
     public void PlayBGM(AudioClip clip)

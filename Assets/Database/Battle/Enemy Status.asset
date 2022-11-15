@@ -30,6 +30,24 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 11400000, guid: c1339aed380a4474894b6a6f66bdbe5b, type: 2}
     _variableInstancer: {fileID: 0}
+  diceCount:
+    _usage: 0
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  damagedEvent:
+    _usage: 0
+    _event: {fileID: 11400000, guid: ca5983ddd70a547ae9880692a2dc0eca, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  healedEvent:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 87a128918b60b43abbedf108e3fe8aed, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
   deathEvent:
     _usage: 0
     _event: {fileID: 11400000, guid: 89a902d74d7aa49b2b76e6d91356256e, type: 2}

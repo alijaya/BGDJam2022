@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d35e2eb934747da9d77a3af62bb8ca, type: 3}
-  m_Name: Enemy Death
+  m_Script: {fileID: 11500000, guid: 8851fc3b1cb0e46d392c44ac3875fc70, type: 3}
+  m_Name: AutoRuntimeInit
   m_EditorClassIdentifier: 
-  _developerDescription: 
-  _replayBufferSize: 0
+  globalPrefabs:
+  - {fileID: 753693304482731685, guid: c89211604caad401c8df02d08c47610d, type: 3}
+  - {fileID: 959989663717546855, guid: b40ad71fe73cf4ceba778e32ff488bc0, type: 3}

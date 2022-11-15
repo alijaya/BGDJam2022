@@ -10,6 +10,8 @@ public class CharacterStatus : ScriptableObject
     public IntReference currentHP;
     public IntReference maxHP;
     public IntReference diceCount;
+    public IntEventReference damagedEvent;
+    public IntEventReference healedEvent;
     public VoidBaseEventReference deathEvent;
 
     public void FullHP()
@@ -19,7 +21,7 @@ public class CharacterStatus : ScriptableObject
 
     public void DoDamaged(int damage)
     {
-        GlobalRef.instance.PlaySFXAttack();
+        damagedEvent.Event.Raise(damage);
         currentHP.Value -= damage;
         if (currentHP.Value <= 0)
         {
@@ -29,13 +31,13 @@ public class CharacterStatus : ScriptableObject
 
     public void DoHealed(int damage)
     {
-        GlobalRef.instance.PlaySFXHeal();
+        healedEvent.Event.Raise(damage);
         currentHP.Value += damage;
     }
 
     public void DoUpgradeMaxHealth(int health)
     {
-        GlobalRef.instance.PlaySFXHeal();
+        healedEvent.Event.Raise(health);
         maxHP.Value += health;
         currentHP.Value += health;
     }

@@ -15,4 +15,5 @@ public class MainMenuManager : MonoBehaviour
     {
         GlobalRef.instance.GoToMap();
     }
+
 }

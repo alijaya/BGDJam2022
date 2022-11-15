@@ -36,6 +36,18 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  damagedEvent:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 7a7fffe75d20646169563d24ec6b09d4, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  healedEvent:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 770004a25616a4c8abcbe7e20f3d00dd, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
   deathEvent:
     _usage: 0
     _event: {fileID: 11400000, guid: 82f0b9b9022e94e3cb2ed66db3100e65, type: 2}
