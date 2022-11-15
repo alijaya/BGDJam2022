@@ -26,6 +26,8 @@ public class GlobalRef : GlobalSO<GlobalRef>
 
     public DamageCounter prefabDamageCounter;
     public DamageCounter prefabHealCounter;
+    public DamageParticle prefabDamageParticle;
+    public DamageParticle prefabHealParticle;
 
     public SceneReference sceneMainMenu;
     public SceneReference sceneMap;

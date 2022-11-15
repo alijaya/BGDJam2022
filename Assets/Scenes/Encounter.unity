@@ -288,6 +288,8 @@ GameObject:
   - component: {fileID: 44842205}
   - component: {fileID: 44842204}
   - component: {fileID: 44842203}
+  - component: {fileID: 44842207}
+  - component: {fileID: 44842206}
   m_Layer: 5
   m_Name: Enemy Sprite
   m_TagString: Untagged
@@ -353,6 +355,37 @@ RectTransform:
   m_AnchoredPosition: {x: 724.5, y: -155}
   m_SizeDelta: {x: 571, y: 693}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &44842206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44842202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2abdd267e6e5488ea0211beb92e42dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: ca5983ddd70a547ae9880692a2dc0eca, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  duration: 200
+--- !u!225 &44842207
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44842202}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &45542233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3443,6 +3476,8 @@ GameObject:
   - component: {fileID: 1243723861}
   - component: {fileID: 1243723863}
   - component: {fileID: 1243723862}
+  - component: {fileID: 1243723865}
+  - component: {fileID: 1243723864}
   m_Layer: 5
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -3508,6 +3543,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243723860}
   m_CullTransparentMesh: 1
+--- !u!114 &1243723864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243723860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2abdd267e6e5488ea0211beb92e42dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 7a7fffe75d20646169563d24ec6b09d4, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  duration: 200
+--- !u!225 &1243723865
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243723860}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1368225051
 GameObject:
   m_ObjectHideFlags: 0

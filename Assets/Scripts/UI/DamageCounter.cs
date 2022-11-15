@@ -12,6 +12,8 @@ public class DamageCounter : MonoBehaviour
         var canvas = FindObjectOfType<Canvas>();
         var damageCounter = Instantiate(GlobalRef.instance.prefabDamageCounter, position, Quaternion.identity, canvas.transform);
         damageCounter.SetDamage(damage);
+        var damageParticle = Instantiate(GlobalRef.instance.prefabDamageParticle, position, Quaternion.identity);
+        damageParticle.SetDamage(damage);
     }
 
     public static void SpawnHeal(Vector3 position, int damage)
@@ -19,6 +21,8 @@ public class DamageCounter : MonoBehaviour
         var canvas = FindObjectOfType<Canvas>();
         var damageCounter = Instantiate(GlobalRef.instance.prefabHealCounter, position, Quaternion.identity, canvas.transform);
         damageCounter.SetDamage(damage);
+        var damageParticle = Instantiate(GlobalRef.instance.prefabHealParticle, position, Quaternion.identity);
+        damageParticle.SetDamage(damage);
     }
 
     private CanvasGroup canvasGroup;

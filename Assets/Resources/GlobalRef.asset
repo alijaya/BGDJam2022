@@ -60,6 +60,8 @@ MonoBehaviour:
   enemies: {fileID: 11400000, guid: 1d2d64c8b1c094471bd33e5ba2dece5a, type: 2}
   prefabDamageCounter: {fileID: 3516329626138482971, guid: c61a36c73ee9a404fa2cbc00189120b5, type: 3}
   prefabHealCounter: {fileID: 3784383476172036381, guid: f9676b791ec3c43dcbba6bc998fd1e16, type: 3}
+  prefabDamageParticle: {fileID: 863742828458085600, guid: 3176807f38cb2474e882d2a8205f3f48, type: 3}
+  prefabHealParticle: {fileID: -4645620663594863549, guid: 5987de28b02ff4a03b758c0b7643727a, type: 3}
   sceneMainMenu:
     sceneAsset: {fileID: 102900000, guid: ea4448b858f0a444ab23ba8cffdd309d, type: 3}
     sceneAssetGuidHex: ea4448b858f0a444ab23ba8cffdd309d
